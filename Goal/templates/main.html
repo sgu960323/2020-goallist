@@ -8,20 +8,27 @@
     <div name='top'>
         <span>목표리스트</span>
         <button onclick="mymodal();">글쓰기</button>
+        <button onclick=location.href="{% url 'logout' %}">로그아웃</button>
     </div>
     <div name='body'>
+        {% for post in posts %}
+            {{ post.author}}<br>
+            {{ post.title }}<br>
+            {{ post.body }}<br>
+            -------------------------------------<br>
+        {% endfor %}
     </div>
     <!-- The Modal -->
     <div id="myModal" class="modal">
         <!-- modal_content-->
         <div class="modal-content">
         <span id="myclose" class="close">&times;</span>
-        <form method="POST">{% csrf_token %}
+        <form method="POST" action="{% url 'main' %}">{% csrf_token %}
             제목: <input name="title" type="text" required><br>
             내용: <textarea name="body" required></textarea><br>
-            목표날짜: <input type="text" required><br>
-            목표이유: <input type="text" required><br>
-            목표분야: <input type="text" required><br><br>
+            목표날짜: <input name="year" type="text" required>년 <input name="month" type="text" required>월 <input name="day" type="text" required>일<br>
+            목표이유: <input name="reason" type="text" required><br>
+            목표분야: <input name="subject" type="text" required><br><br>
             <button type="submit">목표설정</button>
         </form>
         </div>
