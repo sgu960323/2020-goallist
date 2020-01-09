@@ -1,4 +1,8 @@
+{% load static %}
 <html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
 <body>
     
     <div name='top'>
@@ -11,24 +15,28 @@
     <div id="myModal" class="modal">
         <!-- modal_content-->
         <div class="modal-content">
-        <span class="close">&times;</span>
+        <span id="myclose" class="close">&times;</span>
         <form method="POST">{% csrf_token %}
             제목: <input name="title" type="text" required><br>
             내용: <textarea name="body" required></textarea><br>
             목표날짜: <input type="text" required><br>
             목표이유: <input type="text" required><br>
-            목표분야: <input type="text" required><br>
+            목표분야: <input type="text" required><br><br>
             <button type="submit">목표설정</button>
         </form>
         </div>
     </div>
-
-
     <script>
         var modal=document.getElementById('myModal');
+        var close=document.getElementById('myclose');
         function mymodal(){
             modal.style.display="block";
         }
+        close.onclick=function(){
+            modal.style.display="none";
+        }
     </script>
+
+    
 </body>
 </html>
