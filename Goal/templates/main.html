@@ -49,6 +49,8 @@
             <div id="reason">5</div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--jquery ajax 사용하려면 위와 같이 해야함 jquery 알아보기-->
     <script>
         var modal=document.getElementById('myModal');
         var close=document.getElementById('myclose');
@@ -70,11 +72,10 @@
             };
         };
         $(".postbutton").click(function(){
-            alert('here');
             pk=$(this).attr('name');
             $.ajax({
                 type:"GET",
-                url:"detail/",
+                url: "detail/",
                 data:{'pk':pk},
                 dataType:"json",
                 contentType:"json",
