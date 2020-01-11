@@ -4,7 +4,9 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    
+    <script>
+        var pk;
+    </script>
     <div name='top'>
         <span>목표리스트</span>
         <button onclick="mymodal();">글쓰기</button>
@@ -12,9 +14,11 @@
     </div>
     <div name='body'>
         {% for post in posts %}
-            {{ post.author}}님의 목표 | 분야: {{ post.subject }}<br>
-            제목: {{ post.title }} <button onclick="detailmodal();">자세히</button><br>
-            -------------------------------------<br>
+            <div class="postdetail" name="{{post.id}}">
+                {{ post.author}}님의 목표 | 분야: {{ post.subject }}<br>
+                제목: {{ post.title }} <button class="postbutton" name="{{post.id}}" onclick="detailmodal();">자세히</button><br>
+                -------------------------------------<br>
+            </div>
         {% endfor %}
     </div>
     <!-- The Modal -->
@@ -38,7 +42,11 @@
         <!-- detail modal content-->
         <div class="modal-content">
             <span id="detailclose" class="close">&times;</span>
-            <div>hello</div>
+            <div id="nickname">1</div>
+            <div id="title">2</div>
+            <div id="body">3</div>
+            <div id="date">4</div>
+            <div id="reason">5</div>
         </div>
     </div>
     <script>
@@ -46,20 +54,43 @@
         var close=document.getElementById('myclose');
         function mymodal(){
             modal.style.display="block";
-        }
+        };
         close.onclick=function(){
             modal.style.display="none";
-        }
+        };
     </script>
     <script>
         function detailmodal(){
             var detailmodal=document.getElementById('detailModal');
             var detailclose=document.getElementById('detailclose');
             detailmodal.style.display="block";
+            
             detailclose.onclick=function(){
                 detailmodal.style.display="none";
-            }
-        }
+            };
+        };
+        $(".postbutton").click(function(){
+            alert('here');
+            pk=$(this).attr('name');
+            $.ajax({
+                type:"GET",
+                url:"detail/",
+                data:{'pk':pk},
+                dataType:"json",
+                contentType:"json",
+                success:function(msg){
+                    $("#nickname").append(msg['author']);
+                    $("#nickname").append("님의 목표");
+                    $("#title").append("제목: ");
+                    $("#title").append(msg['title']);
+                    $("#body").append("내용: ");
+                    $("#body").append(msg['body']);
+                },
+                error:function(response){
+                    alert('fail');
+                }
+            });
+        });
         
     </script>
     
