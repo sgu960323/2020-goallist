@@ -42,11 +42,11 @@
         <!-- detail modal content-->
         <div class="modal-content">
             <span id="detailclose" class="close">&times;</span>
-            <div id="nickname">1</div>
-            <div id="title">2</div>
-            <div id="body">3</div>
-            <div id="date">4</div>
-            <div id="reason">5</div>
+            <div id="nickname"></div>
+            <div id="title"></div>
+            <div id="body"></div>
+            <div id="date"></div>
+            <div id="reason"></div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -75,20 +75,30 @@
             pk=$(this).attr('name');
             $.ajax({
                 type:"GET",
-                url: "detail/",
+                url: "{% url 'postdetail' %}",
                 data:{'pk':pk},
-                dataType:"json",
-                contentType:"json",
                 success:function(msg){
+                    $("#nickname").text("");
                     $("#nickname").append(msg['author']);
                     $("#nickname").append("님의 목표");
+                    $("#title").text("");
                     $("#title").append("제목: ");
                     $("#title").append(msg['title']);
+                    $("#body").text("");
                     $("#body").append("내용: ");
                     $("#body").append(msg['body']);
+                    $("#date").text("");
+                    $("#date").append("목표날짜: ");
+                    $("#date").append(msg['year']+'년');
+                    $("#date").append(msg['month']+'월');
+                    $("#date").append(msg['day']+'일');
+                    $("#reason").text("");
+                    $("#reason").append("목표이유: ");
+                    $("#reason").append(msg['reason']);
                 },
                 error:function(response){
                     alert('fail');
+                    $("#title").append("오류발생");
                 }
             });
         });
