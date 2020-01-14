@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div name="top">
+        <span>내가 달성한 목표</span>
+        <button>글쓰기</button>
+        <button onclick=location.href="{% url 'logout' %}">로그아웃</button><br>
+        -------------------------------------------<br>
+    </div>
+    {% for post in posts %}
+        <div class="postdetail" name="{{post.id}}">
+            제목: {{ post.title }} <button class="postbutton" name="{{post.id}}">자세히</button><br>
+            -------------------------------------<br>
+        </div>
+
+    {% endfor %}
+    <div name="bottom">
+        <button onclick=location.href="{% url 'main' %}">홈으로</button>
+        <button onclick=location.href="{% url 'mypage' %}">마이페이지로</button>
+    </div>
+
+
+</body>
+</html>

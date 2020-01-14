@@ -21,6 +21,10 @@
             </div>
         {% endfor %}
     </div>
+    <div name="bottom">
+        <button onclick=location.href="{% url 'main' %}">홈으로</button>
+        <button onclick=location.href="{% url 'mypage' %}">마이페이지로</button>
+    </div>
     <!-- The Modal -->
     <div id="myModal" class="modal">
         <!-- modal_content-->

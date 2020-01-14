@@ -31,3 +31,7 @@ def post_detail(request):
         context={'author':post.writer,'title':post.title, 'body':post.body, 'year':post.year, 'month':post.month, 'day':post.day, 'reason':post.reason}
         return JsonResponse(context)
         #return HttpResponse(json.dumps(context), content_type="application/json")
+
+def mypage(request):
+    posts=Post.objects.filter(writer=request.user)
+    return render(request, 'mypage.html', {'posts':posts})
