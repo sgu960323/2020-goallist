@@ -4,23 +4,137 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
 <body>
+    <script>
+        var pk
+    </script>
     <div name="top">
         <span>내가 달성한 목표</span>
-        <button>글쓰기</button>
+        <button onclick="mymodal()">글쓰기</button>
         <button onclick=location.href="{% url 'logout' %}">로그아웃</button><br>
         -------------------------------------------<br>
     </div>
     {% for post in posts %}
         <div class="postdetail" name="{{post.id}}">
-            제목: {{ post.title }} <button class="postbutton" name="{{post.id}}">자세히</button><br>
+            제목: {{ post.title }} <button class="postbutton" name="{{post.id}}" onclick="detailmodal();">자세히</button><br>
             -------------------------------------<br>
         </div>
-
     {% endfor %}
     <div name="bottom">
         <button onclick=location.href="{% url 'main' %}">홈으로</button>
         <button onclick=location.href="{% url 'mypage' %}">마이페이지로</button>
     </div>
+
+    <!-- The Modal-->
+    <div id="myModal" class="modal">
+        <!-- modal_content-->
+        <div class="modal-content">
+        <span id="myclose" class="close">&times;</span>
+        <form method="POST" action="{% url 'mypage' %}">{% csrf_token %}
+            제목: <input name="title" type="text" required><br>
+            내용: <textarea name="body" required></textarea><br>
+            목표날짜: <input name="year" type="text" required>년 <input name="month" type="text" required>월 <input name="day" type="text" required>일<br>
+            목표이유: <input name="reason" type="text" required><br>
+            목표분야: <input name="subject" type="text" required><br><br>
+            <button type="submit">목표설정</button>
+        </form>
+        </div>
+    </div>
+    <!-- detail Modal-->
+    <div id="detailModal" class="modal">
+        <!-- detail modal content-->
+        <div class="modal-content">
+            <span id="detailclose" class="close">&times;</span>
+            <div id="nickname"></div>
+            <div id="title"></div>
+            <div id="body"></div>
+            <div id="date"></div>
+            <div id="reason"></div>
+            <button onclick="mydelete();">삭제하기</button>
+        </div>
+    </div>
+    <!--delete Modal-->
+    <div id="deleteModal" class="modal">
+        <!--delete modal content-->
+        <div class="modal-content">
+            <span>정말로 삭제하시겠습니까?</span><br><br><br>
+            <button id="deleteyes">yes</button>
+            <button id="deleteno">no</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--jquery ajax 사용하려면 위와 같이 해야함 jquery 알아보기-->
+    <script>
+        function mymodal(){
+            var postmodal=document.getElementById('myModal');
+            var close=document.getElementById('myclose');
+            postmodal.style.display="block";
+            close.onclick=function(){
+                postmodal.style.display="none";
+            };
+        };
+        function detailmodal(){
+            var detailmodal=document.getElementById('detailModal');
+            var detailclose=document.getElementById('detailclose');
+            detailmodal.style.display="block";
+            detailclose.onclick=function(){
+                detailmodal.style.display="none";
+            };
+        };
+        function mydelete(){
+            var deletemodal=document.getElementById('deleteModal');
+            var deleteno=document.getElementById('deleteno');
+            deletemodal.style.display="block";
+            deleteno.onclick=function(){
+                deletemodal.style.display="none";
+            };
+           
+        };
+        $(".postbutton").click(function(){
+            pk=$(this).attr('name');
+            $.ajax({
+                type:"GET",
+                url: "{% url 'mydetail' %}",
+                data:{'pk':pk},
+                success:function(msg){
+                    $("#nickname").text("");
+                    $("#nickname").append(msg['author']);
+                    $("#nickname").append("님의 목표");
+                    $("#title").text("");
+                    $("#title").append("제목: ");
+                    $("#title").append(msg['title']);
+                    $("#body").text("");
+                    $("#body").append("내용: ");
+                    $("#body").append(msg['body']);
+                    $("#date").text("");
+                    $("#date").append("목표날짜: ");
+                    $("#date").append(msg['year']+'년');
+                    $("#date").append(msg['month']+'월');
+                    $("#date").append(msg['day']+'일');
+                    $("#reason").text("");
+                    $("#reason").append("목표이유: ");
+                    $("#reason").append(msg['reason']);
+                },
+                error:function(response){
+                    alert('fail');
+                }
+            });
+        });
+       $("#deleteyes").click(function(){
+            $.ajax({
+                type:"GET",
+                url:"{% url 'mydelete' %}",
+                data:{'pk':pk},
+                success:function(msg){
+                    //alert("success");
+                    location.href="{% url 'mypage' %}";
+                },
+                error:function(response){
+                    alert("fail");
+                }
+            });
+        });
+    </script>
 
 
 </body>
