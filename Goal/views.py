@@ -61,3 +61,16 @@ def mydelete(request):
         post=get_object_or_404(Post, pk=pk)
         post.delete();
         return HttpResponse()
+
+def myedit(request):
+    if request.method=="POST":
+        pk=request.POST['pk']
+        post=get_object_or_404(Post, pk=pk)
+        post.title=request.POST['title']
+        post.body=request.POST['body']
+        post.year=request.POST['year']
+        post.month=request.POST['month']
+        post.day=request.POST['day']
+        post.reason=request.POST['reason']
+        post.save()
+        return HttpResponse()

@@ -75,6 +75,7 @@
         <div class="modal-content">
             <span id="editclose" class="close">&times;</span>
             <div id="edit_nickname"></div>
+            <form type="POST">
             <span>제목:</span><textarea rows="1" id="edittitle"></textarea><br>
             <span>내용:</span><textarea rows="5" id="editbody"></textarea><br>
             <span>목표날짜:</span>
@@ -82,7 +83,8 @@
             <textarea rows="1" cols="1" id="editmonth"></textarea><span>월</span>
             <textarea rows="1" cols="1" id="editday"></textarea><span>일</span><br>
             <span>목표이유:</span><textarea rows="2" id="editreason"></textarea><br>
-            <button onclick="">수정하기</button>
+            <button type="submit" class="editbutton">수정하기</button>
+            </form>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -180,7 +182,26 @@
                 }
             });
         });
-        
+        $(".editbutton").click(function(){
+            var edittitle=$("#edittitle").val();
+            var editbody=$("#editbody").val();
+            var edityear=$("#edityear").val();
+            var editmonth=$("#editmonth").val();
+            var editday=$("#editday").val();
+            var editreason=$("#editreason").val();
+            $.ajax({
+                type:"POST",
+                url:"{% url 'myedit' %}",
+                data:{'pk':pk, 'title':edittitle, 'body':editbody, 'year':edityear, 'month':editmonth, 'day':editday, 'reason':editreason, 'csrfmiddlewaretoken':'{{ csrf_token }}'},
+                success:function(response){
+                    alert('수정에 성공했습니다');
+                    location.href="{% url 'mypage' %}"
+                },
+                error:function(response){
+                    alert('실패');
+                }
+            });
+        });
     </script>
 
 

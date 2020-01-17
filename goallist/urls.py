@@ -25,6 +25,7 @@ urlpatterns = [
     path('main/mypage/', main_views.mypage, name="mypage"),
     path('main/mypage/mydetail', main_views.mydetail, name="mydetail"),
     path('main/mypage/mydelete', main_views.mydelete, name="mydelete"),
+    path('main/mypage/myedit', main_views.myedit, name="myedit"),
     path('accounts/login/', account_views.login, name="login"),
     path('accounts/logout/', account_views.logout, name="logout"),
     path('register/', account_views.register, name="register"),
