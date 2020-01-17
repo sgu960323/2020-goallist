@@ -5,7 +5,14 @@
 </head>
 <body>
     <script>
-        var pk
+        var pk;
+        var author;
+        var title;
+        var body;
+        var year;
+        var month;
+        var day;
+        var reason;
     </script>
     <div name="top">
         <span>내가 달성한 목표</span>
@@ -49,6 +56,7 @@
             <div id="body"></div>
             <div id="date"></div>
             <div id="reason"></div>
+            <button onclick="myedit();">수정하기</button>
             <button onclick="mydelete();">삭제하기</button>
         </div>
     </div>
@@ -61,7 +69,22 @@
             <button id="deleteno">no</button>
         </div>
     </div>
-
+    <!--edit Modal-->
+    <div id="editModal" class="modal">
+        <!--edit modal content-->
+        <div class="modal-content">
+            <span id="editclose" class="close">&times;</span>
+            <div id="edit_nickname"></div>
+            <span>제목:</span><textarea rows="1" id="edittitle"></textarea><br>
+            <span>내용:</span><textarea rows="5" id="editbody"></textarea><br>
+            <span>목표날짜:</span>
+            <textarea rows="1" cols="4"  id="edityear"></textarea><span>년</span>
+            <textarea rows="1" cols="1" id="editmonth"></textarea><span>월</span>
+            <textarea rows="1" cols="1" id="editday"></textarea><span>일</span><br>
+            <span>목표이유:</span><textarea rows="2" id="editreason"></textarea><br>
+            <button onclick="">수정하기</button>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!--jquery ajax 사용하려면 위와 같이 해야함 jquery 알아보기-->
     <script>
@@ -88,7 +111,23 @@
             deleteno.onclick=function(){
                 deletemodal.style.display="none";
             };
-           
+        };
+        function myedit(){
+            var editmodal=document.getElementById('editModal');
+            var editclose=document.getElementById('editclose');
+            editmodal.style.display="block";
+            $("#edit_nickname").text("");
+            $("#edit_nickname").append(author);
+            $("#edit_nickname").append("님의 목표");
+            $("#edittitle").text(title);
+            $("#editbody").text(body);
+            $("#edityear").text(year);
+            $("#editmonth").text(month);
+            $("#editday").text(day);
+            $("#editreason").text(reason);
+            editclose.onclick=function(){
+                editmodal.style.display="none";
+            };
         };
         $(".postbutton").click(function(){
             pk=$(this).attr('name');
@@ -97,20 +136,27 @@
                 url: "{% url 'mydetail' %}",
                 data:{'pk':pk},
                 success:function(msg){
+                    author=msg['author'];
                     $("#nickname").text("");
                     $("#nickname").append(msg['author']);
                     $("#nickname").append("님의 목표");
+                    title=msg['title'];
                     $("#title").text("");
                     $("#title").append("제목: ");
                     $("#title").append(msg['title']);
+                    body=msg['body'];
                     $("#body").text("");
                     $("#body").append("내용: ");
                     $("#body").append(msg['body']);
                     $("#date").text("");
+                    year=msg['year'];
+                    month=msg['month'];
+                    day=msg['day'];
                     $("#date").append("목표날짜: ");
                     $("#date").append(msg['year']+'년');
                     $("#date").append(msg['month']+'월');
                     $("#date").append(msg['day']+'일');
+                    reason=msg['reason'];
                     $("#reason").text("");
                     $("#reason").append("목표이유: ");
                     $("#reason").append(msg['reason']);
@@ -134,6 +180,7 @@
                 }
             });
         });
+        
     </script>
 
 
