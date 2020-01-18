@@ -6,6 +6,13 @@
 <body>
     <script>
         var pk;
+        var author;
+        var title;
+        var body;
+        var year;
+        var month;
+        var day;
+        var reason;
     </script>
     <div name='top'>
         <span>목표리스트</span>
@@ -64,6 +71,24 @@
             <button id="deleteno">no</button>
         </div>
     </div>
+    <!--edit Modal-->
+    <div id="editModal" class="modal">
+        <!--edit modal content-->
+        <div class="modal-content">
+            <div id="edit_nickname"></div>
+            <form type="POST">
+            <span>제목:</span><textarea rows="1" id="edittitle"></textarea><br>
+            <span>내용:</span><textarea rows="5" id="editbody"></textarea><br>
+            <span>목표날짜:</span>
+            <textarea rows="1" cols="4"  id="edityear"></textarea><span>년</span>
+            <textarea rows="1" cols="1" id="editmonth"></textarea><span>월</span>
+            <textarea rows="1" cols="1" id="editday"></textarea><span>일</span><br>
+            <span>목표이유:</span><textarea rows="2" id="editreason"></textarea><br>
+            <button type="submit" class="editbutton">수정하기</button>
+            <input type="button" id="editclose" value="취소하기"></button>
+            </form>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!--jquery ajax 사용하려면 위와 같이 해야함 jquery 알아보기-->
     <script>
@@ -86,6 +111,23 @@
                 detailmodal.style.display="none";
             };
         };
+        function myedit(){
+            var editmodal=document.getElementById('editModal');
+            var editclose=document.getElementById('editclose');
+            editmodal.style.display="block";
+            $("#edit_nickname").text("");
+            $("#edit_nickname").append(author);
+            $("#edit_nickname").append("님의 목표");
+            $("#edittitle").text(title);
+            $("#editbody").text(body);
+            $("#edityear").text(year);
+            $("#editmonth").text(month);
+            $("#editday").text(day);
+            $("#editreason").text(reason);
+            editclose.onclick=function(){
+                editmodal.style.display="none";
+            };
+        };
         $(".postbutton").click(function(){
             pk=$(this).attr('name');
             $.ajax({
@@ -93,25 +135,33 @@
                 url: "{% url 'postdetail' %}",
                 data:{'pk':pk},
                 success:function(msg){
+                    author=msg['author']
                     $("#nickname").text("");
                     $("#nickname").append(msg['author']);
                     $("#nickname").append("님의 목표");
+                    title=msg['title'];
                     $("#title").text("");
                     $("#title").append("제목: ");
                     $("#title").append(msg['title']);
+                    body=msg['body'];
                     $("#body").text("");
                     $("#body").append("내용: ");
                     $("#body").append(msg['body']);
                     $("#date").text("");
+                    year=msg['year'];
+                    month=msg['month'];
+                    day=msg['day'];
                     $("#date").append("목표날짜: ");
                     $("#date").append(msg['year']+'년');
                     $("#date").append(msg['month']+'월');
                     $("#date").append(msg['day']+'일');
+                    reason=msg['reason'];
                     $("#reason").text("");
                     $("#reason").append("목표이유: ");
                     $("#reason").append(msg['reason']);
                     $("#mybutton").text('');
                     if(msg['flag']=='1'){
+                        $("#mybutton").append('<button onclick="myedit();">수정하기</button>');
                         $("#mybutton").append('<button onclick="mydelete();">삭제하기</button>');
                     }
                 },
@@ -143,6 +193,26 @@
                 },
                 error:function(response){
                     alert('fail');
+                }
+            });
+        });
+        $(".editbutton").click(function(){
+            var edittitle=$("#edittitle").val();
+            var editbody=$("#editbody").val();
+            var edityear=$("#edityear").val();
+            var editmonth=$("#editmonth").val();
+            var editday=$("#editday").val();
+            var editreason=$("#editreason").val();
+            $.ajax({
+                type:"POST",
+                url:"{% url 'myedit' %}",
+                data:{'pk':pk, 'title':edittitle, 'body':editbody, 'year':edityear, 'month':editmonth, 'day':editday, 'reason':editreason, 'csrfmiddlewaretoken':'{{ csrf_token }}'},
+                success:function(response){
+                    alert('수정에 성공했습니다');
+                    location.href="{% url 'main' %}"
+                },
+                error:function(response){
+                    alert('실패');
                 }
             });
         });
