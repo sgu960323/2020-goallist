@@ -28,7 +28,13 @@ def post_detail(request):
     if request.method=="GET":
         pk=request.GET['pk']
         post=get_object_or_404(Post, pk=pk)
-        context={'author':post.writer,'title':post.title, 'body':post.body, 'year':post.year, 'month':post.month, 'day':post.day, 'reason':post.reason}
+        flag=0
+        a=request.user
+        b=post.writer
+        a=str(a)
+        if a==b:
+            flag=1
+        context={'author':post.writer,'title':post.title, 'body':post.body, 'year':post.year, 'month':post.month, 'day':post.day, 'reason':post.reason, 'flag':flag}
         return JsonResponse(context)
         #return HttpResponse(json.dumps(context), content_type="application/json")
 

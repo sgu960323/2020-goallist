@@ -51,7 +51,17 @@
             <div id="body"></div>
             <div id="date"></div>
             <div id="reason"></div>
-            
+            <div id="mybutton"></div>
+        </div>
+    </div>
+
+    <!-- delete Modal-->
+    <div id="deleteModal" class="modal">
+        <!-- delete modal content-->
+        <div class="modal-content">
+            <span>정말로 삭제하시겠습니까?</span><br><br><br>
+            <button id="deleteyes">yes</button>
+            <button id="deleteno">no</button>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -100,6 +110,10 @@
                     $("#reason").text("");
                     $("#reason").append("목표이유: ");
                     $("#reason").append(msg['reason']);
+                    $("#mybutton").text('');
+                    if(msg['flag']=='1'){
+                        $("#mybutton").append('<button onclick="mydelete();">삭제하기</button>');
+                    }
                 },
                 error:function(response){
                     alert('fail');
@@ -109,6 +123,29 @@
         });
         
     </script>
-    
+    <script>
+        function mydelete(){
+            var deletemodal=document.getElementById('deleteModal');
+            var deleteno=document.getElementById('deleteno');
+            deletemodal.style.display="block";
+            deleteno.onclick=function(){
+                deletemodal.style.display="none";
+            };
+        };
+        $("#deleteyes").click(function(){
+            $.ajax({
+                type:"GET",
+                url: "{% url 'mydelete' %}",
+                data:{'pk':pk},
+                success:function(response){
+                    alert('삭제에 성공했습니다.');
+                    location.href="{% url 'main' %}";
+                },
+                error:function(response){
+                    alert('fail');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

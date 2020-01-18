@@ -175,6 +175,7 @@
                 data:{'pk':pk},
                 success:function(msg){
                     //alert("success");
+                    alert('삭제에 성공했습니다.');
                     location.href="{% url 'mypage' %}";
                 },
                 error:function(response){
