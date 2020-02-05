@@ -5,6 +5,9 @@
     border:0;
     margin:0;
 }
+#login_button, #register_button:hover{
+    cursor:pointer;/*올려놓으면 손모양으로 cursor 바뀜*/
+}
 /*Mobile Device-세로 버전*/
 @media screen and (max-width:767px) and (orientation:portrait){
     #home_container{
@@ -18,9 +21,6 @@
     #login_button, #register_button{
         font-size:4vw;
     }
-    #login_button, #register_button:hover{
-        cursor:pointer;/*올려놓으면 손모양으로 cursor 바뀜*/
-    }
 }
 /*Mobile Device-가로 버전*/
 @media screen and (max-width:767px) and (orientation:landscape){
@@ -28,18 +28,12 @@
         margin-top:8%;
         font-size:3vw;
     }
-    #login_button, #register_button:hover{
-        cursor:pointer;
-    }
 }
 /*Mobile Device-Pixel 2 XL, iPhone X 가로버전*/
 @media screen and (min-width:768px) and (max-width:823px) and (orientation:landscape){
     #home_container{
         margin-top:5%;
         font-size:3vw;
-    }
-    #login_button, #register_button:hover{
-        cursor:pointer;
     }
 }
 /*Tablet Device-iPad, iPad Pro 세로버전*/
@@ -55,9 +49,6 @@
     #login_button, #register_button{
         font-size:4vw;
     }
-    #login_button, #register_button:hover{
-        cursor:pointer;
-    }
 }
 /*Tablet Device-iPad 가로버전*/
 @media screen and (min-width: 824px) and (max-width:1024px) and (orientation:landscape){
@@ -72,9 +63,6 @@
     #login_button, #register_button{
         font-size:3vw;
     }
-    #login_button, #register_button:hover{
-        cursor:pointer;
-    }
 }
 /*Desktop and iPad Pro 가로버전*/
 @media screen and (min-width:1025px){
@@ -88,9 +76,6 @@
     }
     #login_button, #register_button{
         font-size:2vw;
-    }
-    #login_button, #register_button:hover{
-        cursor:pointer;
     }
 }
     
