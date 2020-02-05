@@ -1,15 +1,15 @@
 /*home.html css----------------*/
 #home_body{
     background: linear-gradient(#f3c6ed, #eb91f3);/*그라데이션*/
-    text-align:center;
+    text-align:center;/*전체를 중심으로*/
     border:0;
     margin:0;
 }
 /*Mobile Device-세로 버전*/
 @media screen and (max-width:767px) and (orientation:portrait){
     #home_container{
-        margin-top:50%;
-        font-size:5vw;
+        margin-top:50%;/*div의 위에서의 간격*/
+        font-size:5vw;/*vw는 화면에 따른 크기로 반응형에 맞는 글자 크기*/
     }
     #home_ID, #home_PW{
         height:5vw; /*input box 크기는 height, width로*/
@@ -19,7 +19,7 @@
         font-size:4vw;
     }
     #login_button, #register_button:hover{
-        cursor:pointer;
+        cursor:pointer;/*올려놓으면 손모양으로 cursor 바뀜*/
     }
 }
 /*Mobile Device-가로 버전*/
