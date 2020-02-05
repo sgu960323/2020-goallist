@@ -35,18 +35,63 @@
 /*Mobile Device-Pixel 2 XL, iPhone X 가로버전*/
 @media screen and (min-width:768px) and (max-width:823px) and (orientation:landscape){
     #home_container{
-        margin-top:8%;
+        margin-top:5%;
         font-size:3vw;
     }
     #login_button, #register_button:hover{
         cursor:pointer;
     }
 }
-@media screen and (min-width: 768px) and (max-width:991px){
-
+/*Tablet Device-iPad, iPad Pro 세로버전*/
+@media screen and (min-width: 768px) and (max-width:1024px) and (orientation:portrait){
+    #home_container{
+        margin-top:15%;
+        font-size:5vw;
+    }
+    #home_ID, #home_PW{
+        height:5vw; /*input box 크기는 height, width로*/
+        width:30vw;
+    }
+    #login_button, #register_button{
+        font-size:4vw;
+    }
+    #login_button, #register_button:hover{
+        cursor:pointer;
+    }
 }
-@media screen and (min-width:992px){
-
+/*Tablet Device-iPad 가로버전*/
+@media screen and (min-width: 824px) and (max-width:1024px) and (orientation:landscape){
+    #home_container{
+        margin-top:12%;
+        font-size:4vw;
+    }
+    #home_ID, #home_PW{
+        height:5vw; /*input box 크기는 height, width로*/
+        width:30vw;
+    }
+    #login_button, #register_button{
+        font-size:3vw;
+    }
+    #login_button, #register_button:hover{
+        cursor:pointer;
+    }
+}
+/*Desktop and iPad Pro 가로버전*/
+@media screen and (min-width:1025px){
+    #home_container{
+        margin-top:10%;
+        font-size:3vw;
+    }
+    #home_ID, #home_PW{
+        height:3.5vw; /*input box 크기는 height, width로*/
+        width:30vw;
+    }
+    #login_button, #register_button{
+        font-size:2vw;
+    }
+    #login_button, #register_button:hover{
+        cursor:pointer;
+    }
 }
     
 
