@@ -1,0 +1,78 @@
+#register_body{
+    background: linear-gradient(#f3c6ed, #eb91f3);/*그라데이션*/
+    margin:0;
+}
+button{
+   color:white;
+   border:solid 1px white;
+   background-color:rgba(8, 0, 0, 0.301);
+   cursor:pointer;
+   font-size:3vw;
+}
+button:hover{
+    color:black;
+}
+input{
+    float:right;/*form input을 완전히 오른쪽으로 정렬*/
+}
+
+/*Mobile Device-세로 버전*/
+@media screen and (max-width:767px) and (orientation:portrait){
+    #register_container{
+        margin-top:35%;
+        font-size:6vw;
+        text-align:center;
+    }
+    #register_form{/*버튼+기입란*/
+        font-size:4vw;
+        border:solid 1.5px white;
+        text-align:left;
+        margin-left:1%;
+        margin-right:1%;
+    }
+    #register_inner{/*기입란만*/
+        margin-left:15%;
+        margin-right:15%;
+    }
+    #register_button{/*버튼*/
+        text-align:center;
+    }
+}
+/*Mobile Device-가로 버전*/
+@media screen and (max-width:767px) and (orientation:landscape){
+    #register_container{
+        margin-top:5%;
+        font-size:5vw;
+        text-align:center;
+    }
+    #register_form{/*버튼+기입란*/
+        font-size:3vw;
+        border:solid 1.5px white;
+        text-align:left;
+        margin-left:1%;
+        margin-right:1%;
+    }
+    #register_inner{/*기입란만*/
+        margin-left:28.5%;
+        margin-right:28.5%;
+    }
+    #register_button{/*버튼*/
+        text-align:center;
+    }
+}
+/*Mobile Device-Pixel 2 XL, iPhone X 가로버전*/
+@media screen and (min-width:768px) and (max-width:823px) and (orientation:landscape){
+    
+}
+/*Tablet Device-iPad, iPad Pro 세로버전*/
+@media screen and (min-width: 768px) and (max-width:1024px) and (orientation:portrait){
+    
+}
+/*Tablet Device-iPad 가로버전*/
+@media screen and (min-width: 824px) and (max-width:1024px) and (orientation:landscape){
+    
+}
+/*Desktop and iPad Pro 가로버전*/
+@media screen and (min-width:1025px){
+   
+}

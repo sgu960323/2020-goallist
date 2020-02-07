@@ -1,14 +1,29 @@
+{% load static %}
 <html>
-<body>
-    <div>회원가입</div>
-    <form method="POST" action="{% url 'register' %}"> {% csrf_token %}
-        이름: <input type="text" name="name" required><br><br>
-        나이: <input type="text" name="age" required><br><br>
-        ID: <input type="text" name="username" required><br><br>
-        PW: <input type="password" name="password" required><br><br>
-        PW 확인: <input type="password" name="password2" required><br><br>
-        이메일: <input type="text" name="email" required><br><br>
-        <button type="submit">가입하기</button><button onclick=location.href="{% url 'home' %}">돌아가기</button>
-    </form>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/register.css' %}">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body id="register_body">
+    <div id="register_container">
+        <div><b>회원가입</b></div><br>
+        <form method="POST" action="{% url 'register' %}"> {% csrf_token %}
+        <div id="register_form">
+            <br>
+            <div id="register_inner">
+            이름: <input type="text" name="name" required><br><br>
+            나이: <input type="text" name="age" required><br><br>
+            ID: <input type="text" name="username" required><br><br>
+            PW: <input type="password" name="password" required><br><br>
+            PW 확인: <input type="password" name="password2" required><br><br>
+            이메일: <input type="text" name="email" required><br><br>
+            </div>
+            <div id="register_button">
+            <button type="submit">가입하기</button>&nbsp;<button onclick=location.href="{% url 'home' %}">돌아가기</button>
+            </div>
+            <br>
+        </div>
+        </form>
+    </div>
 </body>
 </html>
