@@ -7,7 +7,7 @@ button{
    border:solid 1px white;
    background-color:rgba(8, 0, 0, 0.301);
    cursor:pointer;
-   font-size:3vw;
+   font-size:4vw;
 }
 button:hover{
     color:black;
@@ -19,7 +19,7 @@ input{
 /*Mobile Device-세로 버전*/
 @media screen and (max-width:767px) and (orientation:portrait){
     #register_container{
-        margin-top:35%;
+        margin-top:20%;
         font-size:6vw;
         text-align:center;
     }
@@ -62,17 +62,142 @@ input{
 }
 /*Mobile Device-Pixel 2 XL, iPhone X 가로버전*/
 @media screen and (min-width:768px) and (max-width:823px) and (orientation:landscape){
-    
+    #register_container{
+        margin-top:5%;
+        font-size:5vw;
+        text-align:center;
+    }
+    #register_form{/*버튼+기입란*/
+        font-size:3vw;
+        border:solid 1.5px white;
+        text-align:left;
+        margin-left:1%;
+        margin-right:1%;
+    }
+    #register_inner{/*기입란만*/
+        margin-left:28.5%;
+        margin-right:28.5%;
+    }
+    #register_button{/*버튼*/
+        text-align:center;
+    }
+    input{
+        width:25vw;
+        height:4vw;
+        font-size:3.5vw;
+    }
 }
 /*Tablet Device-iPad, iPad Pro 세로버전*/
 @media screen and (min-width: 768px) and (max-width:1024px) and (orientation:portrait){
-    
+    #register_container{
+        margin-top:20%;
+        font-size:6vw;
+        text-align:center;
+    }
+    #register_form{/*버튼+기입란*/
+        font-size:4vw;
+        border:solid 1.5px white;
+        text-align:left;
+        margin-left:1%;
+        margin-right:1%;
+    }
+    #register_inner{/*기입란만*/
+        margin-left:24%;
+        margin-right:24%;
+    }
+    #register_button{/*버튼*/
+        text-align:center;
+    }
+    input{
+        width:30vw;
+        height:4.5vw;
+        font-size:4vw;
+    }
 }
 /*Tablet Device-iPad 가로버전*/
 @media screen and (min-width: 824px) and (max-width:1024px) and (orientation:landscape){
-    
+    #register_container{
+        margin-top:5%;
+        font-size:6vw;
+        text-align:center;
+    }
+    #register_form{/*버튼+기입란*/
+        font-size:4vw;
+        border:solid 1.5px white;
+        text-align:left;
+        margin-left:1%;
+        margin-right:1%;
+    }
+    #register_inner{/*기입란만*/
+        margin-left:24%;
+        margin-right:24%;
+    }
+    #register_button{/*버튼*/
+        text-align:center;
+    }
+    input{
+        width:30vw;
+        height:4.5vw;
+        font-size:4vw;
+    }
 }
 /*Desktop and iPad Pro 가로버전*/
-@media screen and (min-width:1025px){
-   
+@media screen and (min-width:1025px) and (max-width:1370px){
+    #register_container{
+        margin-top:3%;
+        font-size:4vw;
+        text-align:center;
+    }
+    #register_form{/*버튼+기입란*/
+        font-size:3vw;
+        border:solid 1.5px white;
+        text-align:left;
+        margin-left:10%;
+        margin-right:10%;
+    }
+    #register_inner{/*기입란만*/
+        margin-left:24%;
+        margin-right:24%;
+    }
+    #register_button{/*버튼*/
+        text-align:center;
+    }
+    input{
+        width:27vw;
+        height:4vw;
+        font-size:3vw;
+    }
+    button{
+        font-size:3vw;
+    }
+}
+/*Desktop full screen*/
+@media screen and (min-width:1371px){
+    #register_container{
+        margin-top:3%;
+        font-size:3vw;
+        text-align:center;
+    }
+    #register_form{/*버튼+기입란*/
+        font-size:1.5vw;
+        border:solid 1.5px white;
+        text-align:left;
+        margin-left:20%;
+        margin-right:20%;
+    }
+    #register_inner{/*기입란만*/
+        margin-left:27%;
+        margin-right:27%;
+    }
+    #register_button{/*버튼*/
+        text-align:center;
+    }
+    input{
+        width:20vw;
+        height:2.5vw;
+        font-size:1.5vw;
+    }
+    button{
+        font-size:1.5vw;
+    }
 }
