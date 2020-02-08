@@ -24,23 +24,16 @@
     <div name='body'>
         {% for post in posts %}
             <div id="main_write" class="postdetail" name="{{post.id}}">
-                {{ post.author}}님의 목표 | 분야: {{ post.subject }}<br>
-                제목: {{ post.title }} <button class="postbutton" name="{{post.id}}" onclick="detailmodal();">자세히</button><br>
-            </div>
-            
+                <div id="write_top">
+                    <div id="main_writer">{{ post.author}}님의 목표</div> 
+                    <div id="main_subject">분야: {{ post.subject }}<br></div>
+                </div>
+                <div id="write_bottom">
+                    제목: {{ post.title }} <button class="postbutton" name="{{post.id}}" onclick="detailmodal();">자세히</button><br>
+                </div>
+            </div>    
         {% endfor %}
-        <div><h1>테스트</h1></div>
-        <div><h1>테스트</h1></div>
-        <div><h1>테스트</h1></div>
-        <div><h1>테스트</h1></div>
-        <div><h1>테스트</h1></div>
-        <div><h1>테스트</h1></div>
-        <div><h1>테스트</h1></div>
-        <div><h1>테스트</h1></div>
-        <div><h1>테스트</h1></div>
-        <div><h1>테스트</h1></div>
-        <div><h1>테스트</h1></div>
-        <div><h1>테스트</h1></div>
+        
     </div>
     <div id="main_bottom" name="bottom">
         <button onclick=location.href="{% url 'main' %}">홈으로</button>

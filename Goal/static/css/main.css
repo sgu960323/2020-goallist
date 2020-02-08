@@ -2,56 +2,384 @@ body{
     background-color:rgb(178, 227, 247);
     margin:0;/*기본적으로 사방에 여백이 있는데*/
     padding:0;/*그 여백을 없애주는 역할*/
+    border:0;
 }
-
+button:hover{
+    cursor:pointer;
+    color:white;
+    background-color:rgb(90, 88, 88);
+}
 /*Mobile Device-세로 버전*/
+/*또한 desktop 버전을 가로로 많이 줄였을 때도 적용됨*/
 @media screen and (max-width:480px) and (orientation:portrait){
-    #main_top{
+    #main_top{/*목표리스트, 글쓰기,로그아웃 상단 부분*/
         border-bottom:solid 1.5px black;
-        font-size:6vw;
+        font-size:8vw;
         position:sticky;/*상단 고정 위한 설정*/
         top:0;/*상단 고정 위한 설정*/
         background-color:yellow;
     }
-    #main_top button{
+    #main_top button{/*글쓰기, 로그아웃 버튼*/
+        font-size:5vw;
         float:right;
+        top:5;
     }
-    #main_write{
+    #main_write{/*각 글의 전체 틀*/
         border:solid 2px white;
         margin-left:3%;
         margin-right:3%;
         margin-top:2%;
     }
-    #main_bottom{
+    #write_top{/*글의 글쓴이+분야*/
+        display:flex;
+        align-items:center;
+        border-bottom:solid 2px white;
+        height:10vw;
+    }
+    #write_bottom{/*글의 제목+자세히*/
+        height:8vw;
+        margin-top:3%;
+    }
+    #main_writer{/*글쓴이 부분*/
+        border-right:solid 2px white;
+        font-size:6vw;
+        width:75%;
+    }
+    #main_subject{/*분야 부분*/
+        text-align:right;
+        width:25%;
+    }
+    #main_bottom{/*홈으로,마이페이지로 포함된 하단 부분*/
         position:sticky;/*하단 고정 위한 설정*/
         bottom:0;/*하단 고정 위한 설정*/
         border-top:solid 1.5px black;
         background-color:yellow;
     }
+    .postbutton{/*자세히 버튼*/
+        float:right;
+    }
 }
 /*Mobile Device-가로 버전*/
-@media screen and (max-width:767px) and (orientation:landscape){
-   
+/*두번째 조건은 desktop에서 줄였을 때의 조건*/
+@media screen and (max-width:767px) and (orientation:landscape), (min-width:481px) and (max-width:767px) and (orientation:portrait) {
+    #main_top{/*목표리스트, 글쓰기,로그아웃 상단 부분*/
+        border-bottom:solid 1.5px black;
+        font-size:7vw;
+        position:sticky;/*상단 고정 위한 설정*/
+        top:0;/*상단 고정 위한 설정*/
+        background-color:yellow;
+    }
+    #main_top button{/*글쓰기, 로그아웃 버튼*/
+        font-size:4vw;
+        float:right;
+    }
+    #main_write{/*각 글의 전체 틀*/
+        border:solid 2px white;
+        margin-left:3%;
+        margin-right:3%;
+        margin-top:2%;
+    }
+    #write_top{/*글의 글쓴이+분야*/
+        font-size:5vw;
+        display:flex;
+        align-items:center;
+        border-bottom:solid 2px white;
+        height:10vw;
+    }
+    #write_bottom{/*글의 제목+자세히*/
+        height:6vw;
+        margin-top:1%;
+        font-size:4vw;
+    }
+    #main_writer{/*글쓴이 부분*/
+        border-right:solid 2px white;
+        width:75%;
+    }
+    #main_subject{/*분야 부분*/
+        text-align:right;
+        width:25%;
+    }
+    #main_bottom{/*홈으로,마이페이지로 포함된 하단 부분*/
+        position:sticky;/*하단 고정 위한 설정*/
+        bottom:0;/*하단 고정 위한 설정*/
+        border-top:solid 1.5px black;
+        background-color:yellow;
+    }
+    #main_bottom button{
+        font-size:4vw;
+    }
+    .postbutton{/*자세히 버튼*/
+        font-size:3vw;
+        float:right;
+    }
 }
 /*Mobile Device-Pixel 2 XL, iPhone X 가로버전*/
 @media screen and (min-width:768px) and (max-width:823px) and (orientation:landscape){
-    
+    #main_top{/*목표리스트, 글쓰기,로그아웃 상단 부분*/
+        border-bottom:solid 1.5px black;
+        font-size:7vw;
+        position:sticky;/*상단 고정 위한 설정*/
+        top:0;/*상단 고정 위한 설정*/
+        background-color:yellow;
+    }
+    #main_top button{/*글쓰기, 로그아웃 버튼*/
+        font-size:4vw;
+        float:right;
+    }
+    #main_write{/*각 글의 전체 틀*/
+        border:solid 2px white;
+        margin-left:3%;
+        margin-right:3%;
+        margin-top:2%;
+    }
+    #write_top{/*글의 글쓴이+분야*/
+        font-size:5vw;
+        display:flex;
+        align-items:center;
+        border-bottom:solid 2px white;
+        height:10vw;
+    }
+    #write_bottom{/*글의 제목+자세히*/
+        height:6vw;
+        margin-top:1%;
+        font-size:4vw;
+    }
+    #main_writer{/*글쓴이 부분*/
+        border-right:solid 2px white;
+        width:75%;
+    }
+    #main_subject{/*분야 부분*/
+        text-align:right;
+        width:25%;
+    }
+    #main_bottom{/*홈으로,마이페이지로 포함된 하단 부분*/
+        position:sticky;/*하단 고정 위한 설정*/
+        bottom:0;/*하단 고정 위한 설정*/
+        border-top:solid 1.5px black;
+        background-color:yellow;
+    }
+    #main_bottom button{
+        font-size:4vw;
+    }
+    .postbutton{/*자세히 버튼*/
+        font-size:3vw;
+        float:right;
+    }
 }
 /*Tablet Device-iPad, iPad Pro 세로버전*/
 @media screen and (min-width: 768px) and (max-width:1024px) and (orientation:portrait){
-    
+    #main_top{/*목표리스트, 글쓰기,로그아웃 상단 부분*/
+        border-bottom:solid 1.5px black;
+        font-size:7vw;
+        position:sticky;/*상단 고정 위한 설정*/
+        top:0;/*상단 고정 위한 설정*/
+        background-color:yellow;
+    }
+    #main_top button{/*글쓰기, 로그아웃 버튼*/
+        font-size:4vw;
+        float:right;
+    }
+    #main_write{/*각 글의 전체 틀*/
+        border:solid 2px white;
+        margin-left:3%;
+        margin-right:3%;
+        margin-top:2%;
+    }
+    #write_top{/*글의 글쓴이+분야*/
+        font-size:5vw;
+        display:flex;
+        align-items:center;
+        border-bottom:solid 2px white;
+        height:10vw;
+    }
+    #write_bottom{/*글의 제목+자세히*/
+        height:6vw;
+        margin-top:1%;
+        font-size:4vw;
+    }
+    #main_writer{/*글쓴이 부분*/
+        border-right:solid 2px white;
+        width:75%;
+    }
+    #main_subject{/*분야 부분*/
+        text-align:right;
+        width:25%;
+    }
+    #main_bottom{/*홈으로,마이페이지로 포함된 하단 부분*/
+        position:sticky;/*하단 고정 위한 설정*/
+        bottom:0;/*하단 고정 위한 설정*/
+        border-top:solid 1.5px black;
+        background-color:yellow;
+    }
+    #main_bottom button{
+        font-size:4vw;
+    }
+    .postbutton{/*자세히 버튼*/
+        font-size:3vw;
+        float:right;
+    }
 }
 /*Tablet Device-iPad 가로버전*/
 @media screen and (min-width: 824px) and (max-width:1024px) and (orientation:landscape){
-    
+    #main_top{/*목표리스트, 글쓰기,로그아웃 상단 부분*/
+        border-bottom:solid 1.5px black;
+        font-size:5vw;
+        position:sticky;/*상단 고정 위한 설정*/
+        top:0;/*상단 고정 위한 설정*/
+        background-color:yellow;
+        text-align:center;
+    }
+    #main_top button{/*글쓰기, 로그아웃 버튼*/
+        font-size:3vw;
+        float:right;
+    }
+    #main_write{/*각 글의 전체 틀*/
+        border:solid 2px white;
+        margin-left:8%;
+        margin-right:8%;
+        margin-top:2%;
+    }
+    #write_top{/*글의 글쓴이+분야*/
+        font-size:4vw;
+        display:flex;
+        align-items:center;
+        border-bottom:solid 2px white;
+        height:7vw;
+    }
+    #write_bottom{/*글의 제목+자세히*/
+        height:5vw;
+        margin-top:1%;
+        font-size:3vw;
+    }
+    #main_writer{/*글쓴이 부분*/
+        border-right:solid 2px white;
+        width:75%;
+    }
+    #main_subject{/*분야 부분*/
+        text-align:right;
+        width:25%;
+    }
+    #main_bottom{/*홈으로,마이페이지로 포함된 하단 부분*/
+        position:sticky;/*하단 고정 위한 설정*/
+        bottom:0;/*하단 고정 위한 설정*/
+        border-top:solid 1.5px black;
+        background-color:yellow;
+    }
+    #main_bottom button{
+        font-size:3vw;
+    }
+    .postbutton{/*자세히 버튼*/
+        font-size:3vw;
+        float:right;
+    }
 }
 /*Desktop and iPad Pro 가로버전*/
 @media screen and (min-width:1025px) and (max-width:1370px){
-   
+    #main_top{/*목표리스트, 글쓰기,로그아웃 상단 부분*/
+        border-bottom:solid 1.5px black;
+        font-size:4vw;
+        position:sticky;/*상단 고정 위한 설정*/
+        top:0;/*상단 고정 위한 설정*/
+        background-color:yellow;
+        text-align:center;
+    }
+    #main_top button{/*글쓰기, 로그아웃 버튼*/
+        font-size:2.5vw;
+        float:right;
+    }
+    #main_write{/*각 글의 전체 틀*/
+        border:solid 2px white;
+        margin-left:10%;
+        margin-right:10%;
+        margin-top:2%;
+    }
+    #write_top{/*글의 글쓴이+분야*/
+        font-size:3vw;
+        display:flex;
+        align-items:center;
+        border-bottom:solid 2px white;
+        height:6vw;
+    }
+    #write_bottom{/*글의 제목+자세히*/
+        height:4vw;
+        margin-top:1%;
+        font-size:2.5vw;
+    }
+    #main_writer{/*글쓴이 부분*/
+        border-right:solid 2px white;
+        width:75%;
+    }
+    #main_subject{/*분야 부분*/
+        text-align:right;
+        width:25%;
+    }
+    #main_bottom{/*홈으로,마이페이지로 포함된 하단 부분*/
+        position:sticky;/*하단 고정 위한 설정*/
+        bottom:0;/*하단 고정 위한 설정*/
+        border-top:solid 1.5px black;
+        background-color:yellow;
+    }
+    #main_bottom button{/*홈으로,마이페이지 버튼*/
+        font-size:2.5vw;
+    }
+    .postbutton{/*자세히 버튼*/
+        font-size:2.5vw;
+        float:right;
+    }
 }
 /*Desktop full screen*/
 @media screen and (min-width:1371px){
-
+    #main_top{/*목표리스트, 글쓰기,로그아웃 상단 부분*/
+        border-bottom:solid 1.5px black;
+        font-size:2vw;
+        position:sticky;/*상단 고정 위한 설정*/
+        top:0;/*상단 고정 위한 설정*/
+        background-color:yellow;
+        text-align:center;
+    }
+    #main_top button{/*글쓰기, 로그아웃 버튼*/
+        font-size:1.5vw;
+        float:right;
+    }
+    #main_write{/*각 글의 전체 틀*/
+        border:solid 2px white;
+        margin-left:20%;
+        margin-right:20%;
+        margin-top:2%;
+    }
+    #write_top{/*글의 글쓴이+분야*/
+        font-size:1.7vw;
+        display:flex;
+        align-items:center;
+        border-bottom:solid 2px white;
+        height:4vw;
+    }
+    #write_bottom{/*글의 제목+자세히*/
+        height:2.5vw;
+        margin-top:1%;
+        font-size:1.3vw;
+    }
+    #main_writer{/*글쓴이 부분*/
+        border-right:solid 2px white;
+        width:75%;
+    }
+    #main_subject{/*분야 부분*/
+        text-align:right;
+        width:25%;
+    }
+    #main_bottom{/*홈으로,마이페이지로 포함된 하단 부분*/
+        position:sticky;/*하단 고정 위한 설정*/
+        bottom:0;/*하단 고정 위한 설정*/
+        border-top:solid 1.5px black;
+        background-color:yellow;
+    }
+    #main_bottom button{/*홈으로,마이페이지 버튼*/
+        font-size:1.5vw;
+    }
+    .postbutton{/*자세히 버튼*/
+        font-size:1.3vw;
+        float:right;
+    }
 }
 
 
