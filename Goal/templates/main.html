@@ -1,7 +1,13 @@
 {% load static %}
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <div id="main_top" name='top'>
+        <span>목표리스트</span>
+        <button onclick=location.href="{% url 'logout' %}">로그아웃</button>   
+        <button onclick="mymodal();">글쓰기</button>
+    </div>
 </head>
 <body>
     <script>
@@ -14,21 +20,29 @@
         var day;
         var reason;
     </script>
-    <div name='top'>
-        <span>목표리스트</span>
-        <button onclick="mymodal();">글쓰기</button>
-        <button onclick=location.href="{% url 'logout' %}">로그아웃</button>
-    </div>
+    
     <div name='body'>
         {% for post in posts %}
-            <div class="postdetail" name="{{post.id}}">
+            <div id="main_write" class="postdetail" name="{{post.id}}">
                 {{ post.author}}님의 목표 | 분야: {{ post.subject }}<br>
                 제목: {{ post.title }} <button class="postbutton" name="{{post.id}}" onclick="detailmodal();">자세히</button><br>
-                -------------------------------------<br>
             </div>
+            
         {% endfor %}
+        <div><h1>테스트</h1></div>
+        <div><h1>테스트</h1></div>
+        <div><h1>테스트</h1></div>
+        <div><h1>테스트</h1></div>
+        <div><h1>테스트</h1></div>
+        <div><h1>테스트</h1></div>
+        <div><h1>테스트</h1></div>
+        <div><h1>테스트</h1></div>
+        <div><h1>테스트</h1></div>
+        <div><h1>테스트</h1></div>
+        <div><h1>테스트</h1></div>
+        <div><h1>테스트</h1></div>
     </div>
-    <div name="bottom">
+    <div id="main_bottom" name="bottom">
         <button onclick=location.href="{% url 'main' %}">홈으로</button>
         <button onclick=location.href="{% url 'mypage' %}">마이페이지로</button>
     </div>
