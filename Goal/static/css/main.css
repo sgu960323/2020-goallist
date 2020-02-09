@@ -69,12 +69,41 @@ button:hover{
         /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
     }
     .modal-content{/*modal 안의 내용*/
-        margin-top:40%;
+        margin-top:25%;
         margin-left:7%;
         margin-right:7%;
         background-color:white;
-        height:70vw;
-        border:solid 2px red;
+        height:120vw;
+        border:solid 2px grey;
+        border-radius:10px;
+    }
+    #nickname{
+        margin-top:10%;
+        border-bottom:solid 1.5px grey;
+        font-size:5vw;
+    }
+    #title{
+        overflow:scroll;
+        height:8%;
+        border-bottom:solid 1.5px grey;
+    }
+    #body{
+        overflow:scroll;/*지정한 범위를 넘으면 넘치지 않고 scroll이 생기도록*/
+        height:50%;
+        border-bottom:solid 1.5px grey;
+    }
+    #date{
+        border-bottom:solid 1.5px grey;
+    }
+    #reason{
+        overflow:scroll;
+        height:23.5%;
+    }
+    #mybutton button{
+        border:solid 1px skyblue;
+        background-color:rgb(71, 69, 69);
+        color:skyblue;
+        padding:5px;
     }
 }
 /*Mobile Device-가로 버전*/
