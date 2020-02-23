@@ -77,6 +77,15 @@ button:hover{
         border:solid 2px grey;
         border-radius:10px;
     }
+    .newmodal-content{/*modal 안의 내용*/
+        margin-top:25%;
+        margin-left:7%;
+        margin-right:7%;
+        background-color:white;
+        height:120vw;
+        border:solid 2px grey;
+        border-radius:10px;
+    }
     #nickname{
         margin-top:10%;
         border-bottom:solid 1.5px grey;
@@ -207,6 +216,15 @@ button:hover{
         border:solid 2px grey;
         border-radius:10px;
         
+    }
+    .newmodal-content{/*modal 안의 내용*/
+        margin-top:2%;
+        margin-left:7%;
+        margin-right:7%;
+        background-color:white;
+        height:90vw;
+        border:solid 2px grey;
+        border-radius:10px;
     }
     #nickname{
         margin-top:6%;
@@ -372,6 +390,16 @@ button:hover{
         border-radius:10px;
         
     }
+    .newmodal-content{/*modal 안의 내용*/
+        margin-top:2%;
+        margin-left:7%;
+        margin-right:7%;
+        background-color:white;
+        height:90vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        
+    }
     #nickname{
         margin-top:6%;
         border-bottom:solid 1.5px grey;
@@ -410,30 +438,55 @@ button:hover{
     #new_title{
         margin-left:3.7%;
         margin-top:5%;
+        font-size:4vw;
+    }
+    #new_title input{
+        height:4vw;
+        font-size:3.5vw;
     }
     #new_body{
         margin-left:3.7%;
+        font-size:4vw;
+    }
+    #new_body textarea{
+        font-size:3.5vw;
     }
     #new_date{
         display:flex;
         justify-content:flex-start;
         margin-left:3.7%;
+        font-size:4vw;
     }
-    #new_year{
+    #new_year input{
+        height:4vw;
+        font-size:3.5vw;
     
     }
-    #new_month{
+    #new_month select{
+        height:4vw;
+        font-size:3vw;
     }
-    #new_day{
+    #new_day select{
+        height:4vw;
+        font-size:3vw;
     }
     #new_reason{
         margin-left:3.7%;
+        font-size:4vw;
     }
     #new_subject{
         margin-left:3.7%;
+        font-size:4vw;
+    }
+    #new_subject input{
+        height:4vw;
+        font-size:3.5vw;
     }
     #new_button{
         text-align:center;
+    }
+    #new_button button{
+        font-size:4vw;
     }
 }
 /*Tablet Device-iPad, iPad Pro 세로버전*/
@@ -499,6 +552,15 @@ button:hover{
         /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
     }
     .modal-content{/*modal 안의 내용*/
+        margin-top:15%;
+        margin-left:7%;
+        margin-right:7%;
+        background-color:white;
+        height:100vw;
+        border:solid 2px grey;
+        border-radius:10px;
+    }
+    .newmodal-content{/*modal 안의 내용*/
         margin-top:15%;
         margin-left:7%;
         margin-right:7%;
@@ -670,6 +732,16 @@ button:hover{
         border-radius:10px;
         
     }
+    .newmodal-content{/*modal 안의 내용*/
+        margin-top:2%;
+        margin-left:7%;
+        margin-right:7%;
+        background-color:yellow;
+        height:70vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        
+    }
     #nickname{
         margin-top:6%;
         border-bottom:solid 1.5px grey;
@@ -708,30 +780,58 @@ button:hover{
     #new_title{
         margin-left:3.7%;
         margin-top:5%;
+        font-size:3vw;
+    }
+    #new_title input{
+        height:3vw;
+        font-size:2.5vw;
     }
     #new_body{
         margin-left:3.7%;
+        font-size:3vw;
+    }
+    #new_body textarea{
+        font-size:2.5vw;
     }
     #new_date{
         display:flex;
         justify-content:flex-start;
         margin-left:3.7%;
+        font-size:3vw;
     }
-    #new_year{
+    #new_year input{
+        height:3vw;
+        font-size:2.5vw;
     
     }
-    #new_month{
+    #new_month select{
+        height:3vw;
+        font-size:2.5vw;
     }
-    #new_day{
+    #new_day select{
+        height:3vw;
+        font-size:2.5vw;
     }
     #new_reason{
         margin-left:3.7%;
+        font-size:3vw;
+    }
+    #new_reason textarea{
+        font-size:2.5vw;
     }
     #new_subject{
         margin-left:3.7%;
+        font-size:3vw;
+    }
+    #new_subject input{
+        height:3vw;
+        font-size:2.5vw;
     }
     #new_button{
         text-align:center;
+    }
+    #new_button button{
+        font-size:3vw;
     }
 }
 /*Desktop and iPad Pro 가로버전*/
@@ -798,12 +898,23 @@ button:hover{
         /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
         overflow:auto;
     }
+    
     .modal-content{/*modal 안의 내용*/
         margin-top:2%;
         margin-left:15%;
         margin-right:15%;
         background-color:white;
         height:45vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        
+    }
+    .newmodal-content{/*modal 안의 내용*/
+        margin-top:3%;
+        margin-left:15%;
+        margin-right:15%;
+        background-color:white;
+        height:50vw;
         border:solid 2px grey;
         border-radius:10px;
         
@@ -846,30 +957,57 @@ button:hover{
     #new_title{
         margin-left:3.7%;
         margin-top:5%;
+        font-size:2vw;
+    }
+    #new_title input{
+        height:2.5vw;
+        font-size:2vw;
     }
     #new_body{
         margin-left:3.7%;
+        font-size:2vw;
+    }
+    #new_body textarea{
+        font-size:2vw;
     }
     #new_date{
         display:flex;
         justify-content:flex-start;
         margin-left:3.7%;
+        font-size:2vw;
     }
-    #new_year{
-    
+    #new_year input{
+        height:2.5vw;
+        font-size:2vw;
     }
-    #new_month{
+    #new_month select{
+        height:2.5vw;
+        font-size:2vw;
     }
-    #new_day{
+    #new_day select{
+        height:2.5vw;
+        font-size:2vw;
     }
     #new_reason{
         margin-left:3.7%;
+        font-size:2vw;
+    }
+    #new_reason textarea{
+        font-size:2vw;
     }
     #new_subject{
         margin-left:3.7%;
+        font-size:2vw;
+    }
+    #new_subject input{
+        height:2.5vw;
+        font-size:2vw;
     }
     #new_button{
         text-align:center;
+    }
+    #new_button button{
+        font-size:2vw;;
     }
 }
 /*Desktop full screen*/
@@ -946,6 +1084,16 @@ button:hover{
         border-radius:10px;
         
     }
+    .newmodal-content{/*modal 안의 내용*/
+        margin-top:3%;
+        margin-left:15%;
+        margin-right:15%;
+        background-color:blue;
+        height:43vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        
+    }
     #nickname{
         margin-top:5%;
         border-bottom:solid 1.5px grey;
@@ -984,30 +1132,57 @@ button:hover{
     #new_title{
         margin-left:3.7%;
         margin-top:5%;
+        font-size:1.7vw;
+    }
+    #new_title input{
+        height:1.7vw;
+        font-size:1.5vw;
     }
     #new_body{
         margin-left:3.7%;
+        font-size:1.7vw;
+    }
+    #new_body textarea{
+        font-size:1.5vw;
     }
     #new_date{
         display:flex;
         justify-content:flex-start;
         margin-left:3.7%;
+        font-size:1.7vw;
     }
-    #new_year{
-    
+    #new_year input{
+        height:1.7vw;
+        font-size:1.5vw;
     }
-    #new_month{
+    #new_month select {
+        height:1.7vw;
+        font-size:1.5vw;
     }
-    #new_day{
+    #new_day select{
+        height:1.7vw;
+        font-size:1.5vw;
     }
     #new_reason{
         margin-left:3.7%;
+        font-size:1.7vw;
+    }
+    #new_reason textarea{
+        font-size:1.7vw;
     }
     #new_subject{
         margin-left:3.7%;
+        font-size:1.7vw;
+    }
+    #new_subject input{
+        height:1.7vw;
+        font-size:1.5vw;
     }
     #new_button{
         text-align:center;
+    }
+    #new_button button{
+        font-size:1.7vw;;
     }
 }
 

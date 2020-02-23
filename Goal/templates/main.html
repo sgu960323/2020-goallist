@@ -42,13 +42,13 @@
     <!-- The Modal -->
     <div id="myModal" class="modal">
         <!-- modal_content-->
-        <div class="modal-content">
+        <div class="newmodal-content">
         <span id="myclose" class="close">&times;</span>
         <form method="POST" action="{% url 'main' %}">{% csrf_token %}
-            <div id="new_title">제목: <input style="outline: 1px solid blue; width:65vw;" name="title" type="text" required></div><br>
+            <div id="new_title">제목: <input style="outline: 1px solid blue; width:57vw;" name="title" type="text" required></div><br>
             <div id="new_body">내용<br> <textarea style="outline: 1px solid blue;resize:none; width:95%; height:25%;"name="body" required></textarea></div>
             <div id="new_date">
-            목표날짜: &nbsp;<div id="new_year"><input style="outline: 1px solid blue; height: 5vw;width:13vw;"name="year" type="text" required>년</div> 
+            목표날짜: &nbsp;<div id="new_year"><input style="outline: 1px solid blue; width:13vw;"name="year" type="text" required>년</div> 
                     <div id="new_month">
                     <select style="outline: 1px solid blue;" name="month" required>
                         <option value="1">1</option>
