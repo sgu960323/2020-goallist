@@ -45,6 +45,7 @@
     #home_ID, #home_PW{
         height:5vw; /*input box 크기는 height, width로*/
         width:30vw;
+        font-size:4.5vw;
     }
     #login_button, #register_button{
         font-size:4vw;
@@ -59,6 +60,7 @@
     #home_ID, #home_PW{
         height:5vw; /*input box 크기는 height, width로*/
         width:30vw;
+        
     }
     #login_button, #register_button{
         font-size:3vw;
@@ -78,7 +80,11 @@
         font-size:2vw;
     }
 }
-    
+@media screen and (min-width:1371px){
+    input{
+        font-size:3vw;
+    }
+}
 
 
 
