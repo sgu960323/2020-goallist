@@ -178,6 +178,7 @@ button:hover{
         height:70vw;
         border:solid 2px grey;
         border-radius:10px;
+        
     }
     #nickname{
         margin-top:6%;
@@ -266,6 +267,62 @@ button:hover{
     .postbutton{/*자세히 버튼*/
         font-size:3vw;
         float:right;
+    }
+    .modal{
+        display:none;/*처음에는 안 보이도록*/
+        position:fixed;
+        z-index:1;
+        top:0;
+        height:100%;
+        width:100%;
+        background-color: rgba(0,0,0,0.4); /* 이걸로 opacity 설정을 해야 안의 content가 보이게됨*/
+        /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
+        overflow:auto;
+    }
+    .modal-content{/*modal 안의 내용*/
+        margin-top:2%;
+        margin-left:7%;
+        margin-right:7%;
+        background-color:white;
+        height:70vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        
+    }
+    #nickname{
+        margin-top:6%;
+        border-bottom:solid 1.5px grey;
+        font-size:5vw;
+        height:8%;
+    }
+    #title{
+        overflow:auto;
+        height:7%;
+        border-bottom:solid 1.5px grey;
+        font-size:4vw;
+    }
+    #body{
+        overflow:auto;/*지정한 범위를 넘으면 넘치지 않고 scroll이 생기도록*/
+        height:43%;
+        border-bottom:solid 1.5px grey;
+        font-size:4vw;
+    }
+    #date{
+        border-bottom:solid 1.5px grey;
+        font-size:4vw;
+        height:7%;
+    }
+    #reason{
+        overflow:auto;
+        height:26%;
+        font-size:4vw;
+    }
+    #mybutton button{
+        border:solid 1px skyblue;
+        background-color:rgb(71, 69, 69);
+        color:skyblue;
+        padding:7px;
+        font-size:4vw;
     }
 }
 /*Tablet Device-iPad, iPad Pro 세로버전*/
@@ -426,6 +483,62 @@ button:hover{
         font-size:3vw;
         float:right;
     }
+    .modal{
+        display:none;/*처음에는 안 보이도록*/
+        position:fixed;
+        z-index:1;
+        top:0;
+        height:100%;
+        width:100%;
+        background-color: rgba(0,0,0,0.4); /* 이걸로 opacity 설정을 해야 안의 content가 보이게됨*/
+        /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
+        overflow:auto;
+    }
+    .modal-content{/*modal 안의 내용*/
+        margin-top:2%;
+        margin-left:7%;
+        margin-right:7%;
+        background-color:yellow;
+        height:70vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        
+    }
+    #nickname{
+        margin-top:6%;
+        border-bottom:solid 1.5px grey;
+        font-size:5vw;
+        height:8%;
+    }
+    #title{
+        overflow:auto;
+        height:7%;
+        border-bottom:solid 1.5px grey;
+        font-size:4vw;
+    }
+    #body{
+        overflow:auto;/*지정한 범위를 넘으면 넘치지 않고 scroll이 생기도록*/
+        height:43%;
+        border-bottom:solid 1.5px grey;
+        font-size:4vw;
+    }
+    #date{
+        border-bottom:solid 1.5px grey;
+        font-size:4vw;
+        height:7%;
+    }
+    #reason{
+        overflow:auto;
+        height:26%;
+        font-size:4vw;
+    }
+    #mybutton button{
+        border:solid 1px skyblue;
+        background-color:rgb(71, 69, 69);
+        color:skyblue;
+        padding:7px;
+        font-size:4vw;
+    }
 }
 /*Desktop and iPad Pro 가로버전*/
 @media screen and (min-width:1025px) and (max-width:1370px){
@@ -479,6 +592,62 @@ button:hover{
     .postbutton{/*자세히 버튼*/
         font-size:2.5vw;
         float:right;
+    }
+    .modal{
+        display:none;/*처음에는 안 보이도록*/
+        position:fixed;
+        z-index:1;
+        top:0;
+        height:100%;
+        width:100%;
+        background-color: rgba(0,0,0,0.4); /* 이걸로 opacity 설정을 해야 안의 content가 보이게됨*/
+        /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
+        overflow:auto;
+    }
+    .modal-content{/*modal 안의 내용*/
+        margin-top:2%;
+        margin-left:15%;
+        margin-right:15%;
+        background-color:white;
+        height:45vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        
+    }
+    #nickname{
+        margin-top:6%;
+        border-bottom:solid 1.5px grey;
+        font-size:3vw;
+        height:8%;
+    }
+    #title{
+        overflow:auto;
+        height:7%;
+        border-bottom:solid 1.5px grey;
+        font-size:2vw;
+    }
+    #body{
+        overflow:auto;/*지정한 범위를 넘으면 넘치지 않고 scroll이 생기도록*/
+        height:43%;
+        border-bottom:solid 1.5px grey;
+        font-size:2vw;
+    }
+    #date{
+        border-bottom:solid 1.5px grey;
+        font-size:2vw;
+        height:7%;
+    }
+    #reason{
+        overflow:auto;
+        height:26%;
+        font-size:2vw;
+    }
+    #mybutton button{
+        border:solid 1px skyblue;
+        background-color:rgb(71, 69, 69);
+        color:skyblue;
+        padding:7px;
+        font-size:2vw;
     }
 }
 /*Desktop full screen*/
@@ -534,6 +703,62 @@ button:hover{
         font-size:1.3vw;
         float:right;
     }
+    .modal{
+        display:none;/*처음에는 안 보이도록*/
+        position:fixed;
+        z-index:1;
+        top:0;
+        height:100%;
+        width:100%;
+        background-color: rgba(0,0,0,0.4); /* 이걸로 opacity 설정을 해야 안의 content가 보이게됨*/
+        /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
+        overflow:auto;
+    }
+    .modal-content{/*modal 안의 내용*/
+        margin-top:2%;
+        margin-left:15%;
+        margin-right:15%;
+        background-color:blue;
+        height:40vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        
+    }
+    #nickname{
+        margin-top:5%;
+        border-bottom:solid 1.5px grey;
+        font-size:2.5vw;
+        height:8%;
+    }
+    #title{
+        overflow:auto;
+        height:7%;
+        border-bottom:solid 1.5px grey;
+        font-size:2vw;
+    }
+    #body{
+        overflow:auto;/*지정한 범위를 넘으면 넘치지 않고 scroll이 생기도록*/
+        height:43%;
+        border-bottom:solid 1.5px grey;
+        font-size:2vw;
+    }
+    #date{
+        border-bottom:solid 1.5px grey;
+        font-size:2vw;
+        height:7%;
+    }
+    #reason{
+        overflow:auto;
+        height:26%;
+        font-size:2vw;
+    }
+    #mybutton button{
+        border:solid 1px skyblue;
+        background-color:rgb(71, 69, 69);
+        color:skyblue;
+        padding:7px;
+        font-size:2vw;
+    }
 }
 
 
@@ -561,7 +786,7 @@ button:hover{
 .close{
     color:yellowgreen;
     float: right;
-    font-size:5vw;
+    font-size:3.5vw;
     font-weight:bold;
 }
 
