@@ -142,6 +142,58 @@ button:hover{
     #new_button{
         text-align:center;
     }
+    #edit_nickname{
+        margin-left:3.7%;
+        margin-top:5%;
+        font-size:6vw;
+        border-bottom:1px solid gray;
+    }
+    #edit_title{
+        margin-left:3.7%;
+    }
+    #edit_title textarea{
+        height:6vw;
+        width:57vw;
+        font-size:5vw;
+    }
+    #edit_body{
+        margin-left:3.7%;
+    }
+    #edit_body textarea{
+        width:95%; 
+        height:20%;
+        font-size:5vw;
+    }
+    #edit_date{
+        display:flex;
+        justify-content:flex-start;
+        margin-left:3.7%;
+    }
+    #edit_year textarea{
+        width:13vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_month textarea{
+        width:10vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_day textarea{
+        width:10vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_reason{
+        margin-left:3.7%;
+    }
+    #edit_reason textarea{
+        width:95%; 
+        height:13%;
+    }
+    #edit_button{
+        text-align:center;
+    }
 }
 /*Mobile Device-가로 버전*/
 /*두번째 조건은 desktop에서 줄였을 때의 조건*/
@@ -316,6 +368,69 @@ button:hover{
     #new_button button{
         font-size:4vw;
     }
+    #edit_nickname{
+        margin-left:3.7%;
+        margin-top:5%;
+        font-size:5vw;
+        border-bottom:1px solid gray;
+    }
+    #edit_title{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_title textarea{
+        height:5vw;
+        width:57vw;
+        font-size:4vw;
+    }
+    #edit_body{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_body textarea{
+        width:95%; 
+        height:20%;
+        font-size:4vw;
+    }
+    #edit_date{
+        display:flex;
+        justify-content:flex-start;
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_year textarea{
+        width:13vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_month textarea{
+        width:8vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_day textarea{
+        width:8vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_reason{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_reason textarea{
+        width:95%; 
+        height:13%;
+        font-size:4vw;
+    }
+    #edit_button{
+        text-align:center;
+    }
+    #edit_button button{
+        font-size:4vw;
+    }
+    #edit_button input{
+        font-size:4vw;
+    }
 }
 /*Mobile Device-Pixel 2 XL, iPhone X 가로버전*/
 @media screen and (min-width:768px) and (max-width:823px) and (orientation:landscape){
@@ -488,6 +603,69 @@ button:hover{
     #new_button button{
         font-size:4vw;
     }
+    #edit_nickname{
+        margin-left:3.7%;
+        margin-top:5%;
+        font-size:5vw;
+        border-bottom:1px solid gray;
+    }
+    #edit_title{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_title textarea{
+        height:5vw;
+        width:57vw;
+        font-size:4vw;
+    }
+    #edit_body{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_body textarea{
+        width:95%; 
+        height:20%;
+        font-size:4vw;
+    }
+    #edit_date{
+        display:flex;
+        justify-content:flex-start;
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_year textarea{
+        width:13vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_month textarea{
+        width:8vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_day textarea{
+        width:8vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_reason{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_reason textarea{
+        width:95%; 
+        height:13%;
+        font-size:4vw;
+    }
+    #edit_button{
+        text-align:center;
+    }
+    #edit_button button{
+        font-size:4vw;
+    }
+    #edit_button input{
+        font-size:4vw;
+    }
 }
 /*Tablet Device-iPad, iPad Pro 세로버전*/
 @media screen and (min-width: 768px) and (max-width:1024px) and (orientation:portrait){
@@ -655,6 +833,69 @@ button:hover{
         text-align:center;
     }
     #new_button button{
+        font-size:4vw;
+    }
+    #edit_nickname{
+        margin-left:3.7%;
+        margin-top:5%;
+        font-size:5vw;
+        border-bottom:1px solid gray;
+    }
+    #edit_title{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_title textarea{
+        height:5vw;
+        width:57vw;
+        font-size:4vw;
+    }
+    #edit_body{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_body textarea{
+        width:95%; 
+        height:20%;
+        font-size:4vw;
+    }
+    #edit_date{
+        display:flex;
+        justify-content:flex-start;
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_year textarea{
+        width:13vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_month textarea{
+        width:10vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_day textarea{
+        width:10vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_reason{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_reason textarea{
+        width:95%; 
+        height:13%;
+        font-size:4vw;
+    }
+    #edit_button{
+        text-align:center;
+    }
+    #edit_button button{
+        font-size:4vw;
+    }
+    #edit_button input{
         font-size:4vw;
     }
 }
@@ -833,6 +1074,69 @@ button:hover{
     #new_button button{
         font-size:3vw;
     }
+    #edit_nickname{
+        margin-left:3.7%;
+        margin-top:5%;
+        font-size:4vw;
+        border-bottom:1px solid gray;
+    }
+    #edit_title{
+        margin-left:3.7%;
+        font-size:3vw;
+    }
+    #edit_title textarea{
+        height:3.5vw;
+        width:57vw;
+        font-size:3vw;
+    }
+    #edit_body{
+        margin-left:3.7%;
+        font-size:3vw;
+    }
+    #edit_body textarea{
+        width:95%; 
+        height:20%;
+        font-size:3vw;
+    }
+    #edit_date{
+        display:flex;
+        justify-content:flex-start;
+        margin-left:3.7%;
+        font-size:3vw;
+    }
+    #edit_year textarea{
+        width:13vw;
+        height:3.5vw;
+        font-size:3vw;
+    }
+    #edit_month textarea{
+        width:8vw;
+        height:3.5vw;
+        font-size:3vw;
+    }
+    #edit_day textarea{
+        width:8vw;
+        height:3.5vw;
+        font-size:3vw;
+    }
+    #edit_reason{
+        margin-left:3.7%;
+        font-size:3vw;
+    }
+    #edit_reason textarea{
+        width:95%; 
+        height:13%;
+        font-size:3vw;
+    }
+    #edit_button{
+        text-align:center;
+    }
+    #edit_button button{
+        font-size:3vw;
+    }
+    #edit_button input{
+        font-size:3vw;
+    }
 }
 /*Desktop and iPad Pro 가로버전*/
 @media screen and (min-width:1025px) and (max-width:1370px){
@@ -1009,6 +1313,69 @@ button:hover{
     #new_button button{
         font-size:2vw;;
     }
+    #edit_nickname{
+        margin-left:3.7%;
+        margin-top:3%;
+        font-size:3.5vw;
+        border-bottom:1px solid gray;
+    }
+    #edit_title{
+        margin-left:3.7%;
+        font-size:2.5vw;
+    }
+    #edit_title textarea{
+        height:2.5vw;
+        width:57vw;
+        font-size:2vw;
+    }
+    #edit_body{
+        margin-left:3.7%;
+        font-size:2.5vw;
+    }
+    #edit_body textarea{
+        width:95%; 
+        height:20%;
+        font-size:2vw;
+    }
+    #edit_date{
+        display:flex;
+        justify-content:flex-start;
+        margin-left:3.7%;
+        font-size:2vw;
+    }
+    #edit_year textarea{
+        width:11vw;
+        height:2.5vw;
+        font-size:2vw;
+    }
+    #edit_month textarea{
+        width:6vw;
+        height:2.5vw;
+        font-size:2vw;
+    }
+    #edit_day textarea{
+        width:6vw;
+        height:2.5vw;
+        font-size:2vw;
+    }
+    #edit_reason{
+        margin-left:3.7%;
+        font-size:2vw;
+    }
+    #edit_reason textarea{
+        width:95%; 
+        height:13%;
+        font-size:2vw;
+    }
+    #edit_button{
+        text-align:center;
+    }
+    #edit_button button{
+        font-size:2vw;
+    }
+    #edit_button input{
+        font-size:2vw;
+    }
 }
 /*Desktop full screen*/
 @media screen and (min-width:1371px){
@@ -1183,6 +1550,69 @@ button:hover{
     }
     #new_button button{
         font-size:1.7vw;;
+    }
+    #edit_nickname{
+        margin-left:3.7%;
+        margin-top:3%;
+        font-size:3.5vw;
+        border-bottom:1px solid gray;
+    }
+    #edit_title{
+        margin-left:3.7%;
+        font-size:2.5vw;
+    }
+    #edit_title textarea{
+        height:2.5vw;
+        width:57vw;
+        font-size:2vw;
+    }
+    #edit_body{
+        margin-left:3.7%;
+        font-size:2.5vw;
+    }
+    #edit_body textarea{
+        width:95%; 
+        height:20%;
+        font-size:2vw;
+    }
+    #edit_date{
+        display:flex;
+        justify-content:flex-start;
+        margin-left:3.7%;
+        font-size:2vw;
+    }
+    #edit_year textarea{
+        width:11vw;
+        height:2.5vw;
+        font-size:2vw;
+    }
+    #edit_month textarea{
+        width:6vw;
+        height:2.5vw;
+        font-size:2vw;
+    }
+    #edit_day textarea{
+        width:6vw;
+        height:2.5vw;
+        font-size:2vw;
+    }
+    #edit_reason{
+        margin-left:3.7%;
+        font-size:2vw;
+    }
+    #edit_reason textarea{
+        width:95%; 
+        height:13%;
+        font-size:2vw;
+    }
+    #edit_button{
+        text-align:center;
+    }
+    #edit_button button{
+        font-size:2vw;
+    }
+    #edit_button input{
+        font-size:2vw;
     }
 }
 
