@@ -86,6 +86,16 @@ button:hover{
         border:solid 2px grey;
         border-radius:10px;
     }
+    .deletemodal-content{/*modal 안의 내용*/
+        margin-top:50%;
+        margin-left:20%;
+        margin-right:20%;
+        background-color:rgb(0, 255, 255);
+        height:30vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        text-align:center;
+    }
     #nickname{
         margin-top:10%;
         border-bottom:solid 1.5px grey;
@@ -277,6 +287,19 @@ button:hover{
         height:90vw;
         border:solid 2px grey;
         border-radius:10px;
+    }
+    .deletemodal-content{/*modal 안의 내용*/
+        margin-top:10%;
+        margin-left:20%;
+        margin-right:20%;
+        background-color:rgb(0, 255, 255);
+        height:30vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        text-align:center;
+    }
+    .deletemodal-content button{
+        font-size:4vw;
     }
     #nickname{
         margin-top:6%;
@@ -515,6 +538,20 @@ button:hover{
         border-radius:10px;
         
     }
+    .deletemodal-content{/*modal 안의 내용*/
+        margin-top:10%;
+        margin-left:20%;
+        margin-right:20%;
+        background-color:rgb(0, 255, 255);
+        height:30vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        text-align:center;
+    }
+    .deletemodal-content button{
+        margin-top:10%;
+        font-size:4vw;
+    }
     #nickname{
         margin-top:6%;
         border-bottom:solid 1.5px grey;
@@ -747,6 +784,20 @@ button:hover{
         border:solid 2px grey;
         border-radius:10px;
     }
+    .deletemodal-content{/*modal 안의 내용*/
+        margin-top:40%;
+        margin-left:20%;
+        margin-right:20%;
+        background-color:rgb(0, 255, 255);
+        height:30vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        text-align:center;
+    }
+    .deletemodal-content button{
+        margin-top:10%;
+        font-size:4vw;
+    }
     #nickname{
         margin-top:6%;
         border-bottom:solid 1.5px grey;
@@ -967,7 +1018,7 @@ button:hover{
         margin-top:2%;
         margin-left:7%;
         margin-right:7%;
-        background-color:yellow;
+        background-color:white;
         height:70vw;
         border:solid 2px grey;
         border-radius:10px;
@@ -977,11 +1028,25 @@ button:hover{
         margin-top:2%;
         margin-left:7%;
         margin-right:7%;
-        background-color:yellow;
+        background-color:white;
         height:70vw;
         border:solid 2px grey;
         border-radius:10px;
         
+    }
+    .deletemodal-content{/*modal 안의 내용*/
+        margin-top:10%;
+        margin-left:20%;
+        margin-right:20%;
+        background-color:rgb(0, 255, 255);
+        height:30vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        text-align:center;
+    }
+    .deletemodal-content button{
+        margin-top:10%;
+        font-size:4vw;
     }
     #nickname{
         margin-top:6%;
@@ -1223,6 +1288,20 @@ button:hover{
         border-radius:10px;
         
     }
+    .deletemodal-content{/*modal 안의 내용*/
+        margin-top:10%;
+        margin-left:20%;
+        margin-right:20%;
+        background-color:rgb(0, 255, 255);
+        height:30vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        text-align:center;
+    }
+    .deletemodal-content button{
+        margin-top:10%;
+        font-size:3vw;
+    }
     #nickname{
         margin-top:6%;
         border-bottom:solid 1.5px grey;
@@ -1445,7 +1524,7 @@ button:hover{
         margin-top:2%;
         margin-left:15%;
         margin-right:15%;
-        background-color:blue;
+        background-color:white;
         height:40vw;
         border:solid 2px grey;
         border-radius:10px;
@@ -1455,11 +1534,25 @@ button:hover{
         margin-top:3%;
         margin-left:15%;
         margin-right:15%;
-        background-color:blue;
+        background-color:white;
         height:43vw;
         border:solid 2px grey;
         border-radius:10px;
         
+    }
+    .deletemodal-content{/*modal 안의 내용*/
+        margin-top:10%;
+        margin-left:20%;
+        margin-right:20%;
+        background-color:rgb(0, 255, 255);
+        height:20vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        text-align:center;
+    }
+    .deletemodal-content button{
+        margin-top:10%;
+        font-size:2vw;
     }
     #nickname{
         margin-top:5%;
