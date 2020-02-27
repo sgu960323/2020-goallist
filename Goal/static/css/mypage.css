@@ -90,6 +90,7 @@ body{
         position:sticky;
         top:0;
         background-color:yellow;
+        z-index:1;
     }
     #mypage_top button{
         font-size:4vw;
@@ -104,6 +105,53 @@ body{
     }
     #mypage_bottom button{
         font-size:4vw;
+    }
+    #total_title, #success_title, #fail_title{
+        border-bottom:solid 1px black;
+        position:sticky;
+        top:0;/*sticky와 함께 이것까지 함께 써야 상단 고정*/
+        width:100%;
+        background-color:rgb(185, 183, 183);
+        text-align:center;
+    }
+    #mypage_total{
+        border:solid 2px black;
+        margin-left:3%;
+        margin-right:3%;
+        margin-top:2%;
+        height:60%;
+        overflow:auto;
+    }
+    #mypage_title{
+        border-bottom:solid 1px black;
+        margin-top:2%;
+        display:flex;
+    }
+    #title{
+        width:90%;
+        text-overflow:ellipsis;/*생략*/
+        white-space:nowrap;/*자동 줄바꿈 하지 않음*/
+        overflow:hidden;
+    }
+    #mypage_half{
+        margin-left:3%;
+        margin-right:3%;
+        margin-top:2%;
+        margin-bottom:10%;
+        height:60%;
+        display:flex;
+    }
+    #success{
+        width:50%;
+        margin-right:2%;
+        border:solid 2px black;
+        overflow:auto;
+    }
+    #fail{
+        width:50%;
+        margin-left:2%;
+        border:solid 2px black;
+        overflow:auto;
     }
     .modal{
         display:none;/*처음에는 안 보이도록*/
@@ -124,6 +172,7 @@ body{
         position:sticky;
         top:0;
         background-color:yellow;
+        z-index:1;
     }
     #mypage_top button{
         font-size:4vw;
@@ -138,6 +187,53 @@ body{
     }
     #mypage_bottom button{
         font-size:4vw;
+    }
+    #total_title, #success_title, #fail_title{
+        border-bottom:solid 1px black;
+        position:sticky;
+        top:0;/*sticky와 함께 이것까지 함께 써야 상단 고정*/
+        width:100%;
+        background-color:rgb(185, 183, 183);
+        text-align:center;
+    }
+    #mypage_total{
+        border:solid 2px black;
+        margin-left:3%;
+        margin-right:3%;
+        margin-top:2%;
+        height:60%;
+        overflow:auto;
+    }
+    #mypage_title{
+        border-bottom:solid 1px black;
+        margin-top:2%;
+        display:flex;
+    }
+    #title{
+        width:90%;
+        text-overflow:ellipsis;/*생략*/
+        white-space:nowrap;/*자동 줄바꿈 하지 않음*/
+        overflow:hidden;
+    }
+    #mypage_half{
+        margin-left:3%;
+        margin-right:3%;
+        margin-top:2%;
+        margin-bottom:10%;
+        height:60%;
+        display:flex;
+    }
+    #success{
+        width:50%;
+        margin-right:2%;
+        border:solid 2px black;
+        overflow:auto;
+    }
+    #fail{
+        width:50%;
+        margin-left:2%;
+        border:solid 2px black;
+        overflow:auto;
     }
     .modal{
         display:none;/*처음에는 안 보이도록*/
@@ -173,6 +269,53 @@ body{
     #mypage_bottom button{
         font-size:4vw;
     }
+    #total_title, #success_title, #fail_title{
+        border-bottom:solid 1px black;
+        position:sticky;
+        top:0;/*sticky와 함께 이것까지 함께 써야 상단 고정*/
+        width:100%;
+        background-color:rgb(185, 183, 183);
+        text-align:center;
+    }
+    #mypage_total{
+        border:solid 2px black;
+        margin-left:3%;
+        margin-right:3%;
+        margin-top:2%;
+        height:40%;
+        overflow:auto;
+    }
+    #mypage_title{
+        border-bottom:solid 1px black;
+        margin-top:2%;
+        display:flex;
+    }
+    #title{
+        width:90%;
+        text-overflow:ellipsis;/*생략*/
+        white-space:nowrap;/*자동 줄바꿈 하지 않음*/
+        overflow:hidden;
+    }
+    #mypage_half{
+        margin-left:3%;
+        margin-right:3%;
+        margin-top:2%;
+        margin-bottom:10%;
+        height:40%;
+        display:flex;
+    }
+    #success{
+        width:50%;
+        margin-right:2%;
+        border:solid 2px black;
+        overflow:auto;
+    }
+    #fail{
+        width:50%;
+        margin-left:2%;
+        border:solid 2px black;
+        overflow:auto;
+    }
     .modal{
         display:none;/*처음에는 안 보이도록*/
         position:fixed;
@@ -206,6 +349,52 @@ body{
     }
     #mypage_bottom button{
         font-size:3vw;
+    }
+    #total_title, #success_title, #fail_title{
+        border-bottom:solid 1px black;
+        position:sticky;
+        top:0;/*sticky와 함께 이것까지 함께 써야 상단 고정*/
+        width:100%;
+        background-color:rgb(185, 183, 183);
+        text-align:center;
+    }
+    #mypage_total{
+        border:solid 2px black;
+        margin-left:3%;
+        margin-right:3%;
+        margin-top:2%;
+        height:40%;
+        overflow:auto;
+    }
+    #mypage_title{
+        border-bottom:solid 1px black;
+        margin-top:2%;
+        display:flex;
+    }
+    #title{
+        width:93%;
+        text-overflow:ellipsis;/*생략*/
+        white-space:nowrap;/*자동 줄바꿈 하지 않음*/
+        overflow:hidden;
+    }
+    #mypage_half{
+        margin-left:3%;
+        margin-right:3%;
+        margin-top:2%;
+        height:35%;
+        display:flex;
+    }
+    #success{
+        width:50%;
+        margin-right:2%;
+        border:solid 2px black;
+        overflow:auto;
+    }
+    #fail{
+        width:50%;
+        margin-left:2%;
+        border:solid 2px black;
+        overflow:auto;
     }
     .modal{
         display:none;/*처음에는 안 보이도록*/
@@ -241,6 +430,52 @@ body{
     #mypage_bottom{
         font-size:2.5vw;
     }
+    #total_title, #success_title, #fail_title{
+        border-bottom:solid 1px black;
+        position:sticky;
+        top:0;/*sticky와 함께 이것까지 함께 써야 상단 고정*/
+        width:100%;
+        background-color:rgb(185, 183, 183);
+        text-align:center;
+    }
+    #mypage_total{
+        border:solid 2px black;
+        margin-left:3%;
+        margin-right:3%;
+        margin-top:2%;
+        height:40%;
+        overflow:auto;
+    }
+    #mypage_title{
+        border-bottom:solid 1px black;
+        margin-top:2%;
+        display:flex;
+    }
+    #title{
+        width:95%;
+        text-overflow:ellipsis;/*생략*/
+        white-space:nowrap;/*자동 줄바꿈 하지 않음*/
+        overflow:hidden;
+    }
+    #mypage_half{
+        margin-left:3%;
+        margin-right:3%;
+        margin-top:2%;
+        height:35%;
+        display:flex;
+    }
+    #success{
+        width:50%;
+        margin-right:2%;
+        border:solid 2px black;
+        overflow:auto;
+    }
+    #fail{
+        width:50%;
+        margin-left:2%;
+        border:solid 2px black;
+        overflow:auto;
+    }
     .modal{
         display:none;/*처음에는 안 보이도록*/
         position:fixed;
@@ -274,6 +509,53 @@ body{
     }
     #mypage_bottom button{
         font-size:1.5vw;
+    }
+    #total_title, #success_title, #fail_title{
+        border-bottom:solid 1px black;
+        position:sticky;
+        top:0;/*sticky와 함께 이것까지 함께 써야 상단 고정*/
+        width:100%;
+        background-color:rgb(185, 183, 183);
+        text-align:center;
+    }
+    #mypage_total{
+        border:solid 2px black;
+        margin-left:3%;
+        margin-right:3%;
+        margin-top:2%;
+        height:40%;
+        overflow:auto;
+    }
+    #mypage_title{
+        border-bottom:solid 1px black;
+        margin-top:2%;
+        vertical-align:center;
+        display:flex;
+    }
+    #title{
+        width:95%;
+        text-overflow:ellipsis;/*생략*/
+        white-space:nowrap;/*자동 줄바꿈 하지 않음*/
+        overflow:hidden;
+    }
+    #mypage_half{
+        margin-left:3%;
+        margin-right:3%;
+        margin-top:2%;
+        height:35%;
+        display:flex;/*div 속 div 를 옆으로 나란하게*/
+    }
+    #success{
+        width:50%;
+        margin-right:2%;
+        border:solid 2px black;
+        overflow:auto;/*넘치는 부분은 자동으로 scroll이 생기도록*/
+    }
+    #fail{
+        width:50%;
+        margin-left:2%;
+        border:solid 2px black;
+        overflow:auto;
     }
     .modal{
         display:none;/*처음에는 안 보이도록*/
