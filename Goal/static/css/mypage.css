@@ -1,0 +1,288 @@
+body{
+    margin:0;/*기본적으로 사방에 여백이 있는데 없애주는 역할*/
+    padding:0;
+}
+/*Mobile Device-세로 버전*/
+/*또한 desktop 버전을 가로로 많이 줄였을 때도 적용됨*/
+@media screen and (max-width:480px) and (orientation:portrait){
+    #mypage_top{/*mylist, 글쓰기, 로그아웃 상단 부분*/
+        border-bottom:solid 1.5px black;
+        font-size:8vw;
+        position:sticky;
+        top:0;
+        background-color:yellow;
+    }
+    #mypage_top button{
+        font-size:5vw;
+        float:right;
+        top:5;
+    }
+    #mypage_bottom{
+        position:fixed;/*footer에 고정시키는 거*/
+        width:100%;
+        bottom:0;
+        border-top:solid 1.5px black;
+        background-color:yellow;
+    }
+    #total_title, #success_title, #fail_title{
+        border-bottom:solid 1px black;
+        position:sticky;
+        top:0;/*sticky와 함께 이것까지 함께 써야 상단 고정*/
+        width:100%;
+        background-color:rgb(185, 183, 183);
+        text-align:center;
+    }
+    #mypage_total{
+        border:solid 2px black;
+        margin-left:3%;
+        margin-right:3%;
+        margin-top:2%;
+        height:40%;
+        overflow:auto;
+    }
+    #mypage_title{
+        border-bottom:solid 1px black;
+        margin-top:2%;
+        display:flex;
+    }
+    #title{
+        width:83%;
+        text-overflow:ellipsis;/*생략*/
+        white-space:nowrap;/*자동 줄바꿈 하지 않음*/
+        overflow:hidden;
+    }
+    #mypage_half{
+        margin-left:3%;
+        margin-right:3%;
+        margin-top:2%;
+        height:40%;
+        display:flex;
+    }
+    #success{
+        width:50%;
+        margin-right:2%;
+        border:solid 2px black;
+        overflow:auto;
+    }
+    #fail{
+        width:50%;
+        margin-left:2%;
+        border:solid 2px black;
+        overflow:auto;
+    }
+    .modal{
+        display:none;/*처음에는 안 보이도록*/
+        position:fixed;
+        z-index:1;
+        top:0;
+        height:100%;
+        width:100%;
+        background-color: rgba(0,0,0,0.4); /* 이걸로 opacity 설정을 해야 안의 content가 보이게됨*/
+        /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
+    }
+}
+/*Mobile Device-가로 버전*/
+/*두번째 조건은 desktop에서 줄였을 때의 조건*/
+@media screen and (max-width:767px) and (orientation:landscape), (min-width:481px) and (max-width:767px) and (orientation:portrait) {
+    #mypage_top{/*mylist, 글쓰기, 로그아웃 상단 부분*/
+        border-bottom:solid 1.5px black;
+        font-size:7vw;
+        position:sticky;
+        top:0;
+        background-color:yellow;
+    }
+    #mypage_top button{
+        font-size:4vw;
+        float:right;
+    }
+    #mypage_bottom{
+        position:fixed;/*footer에 고정시키는 거*/
+        width:100%;
+        bottom:0;
+        border-top:solid 1.5px black;
+        background-color:yellow;
+    }
+    #mypage_bottom button{
+        font-size:4vw;
+    }
+    .modal{
+        display:none;/*처음에는 안 보이도록*/
+        position:fixed;
+        z-index:1;
+        top:0;
+        height:100%;
+        width:100%;
+        background-color: rgba(0,0,0,0.4); /* 이걸로 opacity 설정을 해야 안의 content가 보이게됨*/
+        /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
+    }
+}
+/*Mobile Device-Pixel 2 XL, iPhone X 가로버전*/
+@media screen and (min-width:768px) and (max-width:823px) and (orientation:landscape){
+    #mypage_top{/*mylist, 글쓰기, 로그아웃 상단 부분*/
+        border-bottom:solid 1.5px black;
+        font-size:7vw;
+        position:sticky;
+        top:0;
+        background-color:yellow;
+    }
+    #mypage_top button{
+        font-size:4vw;
+        float:right;
+    }
+    #mypage_bottom{
+        position:fixed;/*footer에 고정시키는 거*/
+        width:100%;
+        bottom:0;
+        border-top:solid 1.5px black;
+        background-color:yellow;
+    }
+    #mypage_bottom button{
+        font-size:4vw;
+    }
+    .modal{
+        display:none;/*처음에는 안 보이도록*/
+        position:fixed;
+        z-index:1;
+        top:0;
+        height:100%;
+        width:100%;
+        background-color: rgba(0,0,0,0.4); /* 이걸로 opacity 설정을 해야 안의 content가 보이게됨*/
+        /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
+    }
+}
+/*Tablet Device-iPad, iPad Pro 세로버전*/
+@media screen and (min-width: 768px) and (max-width:1024px) and (orientation:portrait){
+    #mypage_top{/*mylist, 글쓰기, 로그아웃 상단 부분*/
+        border-bottom:solid 1.5px black;
+        font-size:7vw;
+        position:sticky;
+        top:0;
+        background-color:yellow;
+    }
+    #mypage_top button{
+        font-size:4vw;
+        float:right;
+    }
+    #mypage_bottom{
+        position:fixed;/*footer에 고정시키는 거*/
+        width:100%;
+        bottom:0;
+        border-top:solid 1.5px black;
+        background-color:yellow;
+    }
+    #mypage_bottom button{
+        font-size:4vw;
+    }
+    .modal{
+        display:none;/*처음에는 안 보이도록*/
+        position:fixed;
+        z-index:1;
+        top:0;
+        height:100%;
+        width:100%;
+        background-color: rgba(0,0,0,0.4); /* 이걸로 opacity 설정을 해야 안의 content가 보이게됨*/
+        /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
+    }
+}
+/*Tablet Device-iPad 가로버전*/
+@media screen and (min-width: 824px) and (max-width:1024px) and (orientation:landscape){
+    #mypage_top{/*mylist, 글쓰기, 로그아웃 상단 부분*/
+        border-bottom:solid 1.5px black;
+        font-size:5vw;
+        position:sticky;
+        top:0;
+        background-color:yellow;
+    }
+    #mypage_top button{
+        font-size:3vw;
+        float:right;
+    }
+    #mypage_bottom{
+        position:fixed;/*footer에 고정시키는 거*/
+        width:100%;
+        bottom:0;
+        border-top:solid 1.5px black;
+        background-color:yellow;
+    }
+    #mypage_bottom button{
+        font-size:3vw;
+    }
+    .modal{
+        display:none;/*처음에는 안 보이도록*/
+        position:fixed;
+        z-index:1;
+        top:0;
+        height:100%;
+        width:100%;
+        background-color: rgba(0,0,0,0.4); /* 이걸로 opacity 설정을 해야 안의 content가 보이게됨*/
+        /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
+    }
+}
+/*Desktop and iPad Pro 가로버전*/
+@media screen and (min-width:1025px) and (max-width:1370px){
+    #mypage_top{/*mylist, 글쓰기, 로그아웃 상단 부분*/
+        border-bottom:solid 1.5px black;
+        font-size:4vw;
+        position:sticky;
+        top:0;
+        background-color:yellow;
+    }
+    #mypage_top button{
+        font-size:2.5vw;
+        float:right;
+    }
+    #mypage_bottom{
+        position:fixed;/*footer에 고정시키는 거*/
+        width:100%;
+        bottom:0;
+        border-top:solid 1.5px black;
+        background-color:yellow;
+    }
+    #mypage_bottom{
+        font-size:2.5vw;
+    }
+    .modal{
+        display:none;/*처음에는 안 보이도록*/
+        position:fixed;
+        z-index:1;
+        top:0;
+        height:100%;
+        width:100%;
+        background-color: rgba(0,0,0,0.4); /* 이걸로 opacity 설정을 해야 안의 content가 보이게됨*/
+        /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
+    }
+}
+/*Desktop full screen*/
+@media screen and (min-width:1371px){
+    #mypage_top{/*mylist, 글쓰기, 로그아웃 상단 부분*/
+        border-bottom:solid 1.5px black;
+        font-size:2vw;
+        position:sticky;
+        top:0;
+        background-color:yellow;
+    }
+    #mypage_top button{
+        font-size:1.5vw;
+        float:right;
+    }
+    #mypage_bottom{
+        position:fixed;/*footer에 고정시키는 거*/
+        width:100%;
+        bottom:0;
+        border-top:solid 1.5px black;
+        background-color:yellow;
+    }
+    #mypage_bottom button{
+        font-size:1.5vw;
+    }
+    .modal{
+        display:none;/*처음에는 안 보이도록*/
+        position:fixed;
+        z-index:1;
+        top:0;
+        height:100%;
+        width:100%;
+        background-color: rgba(0,0,0,0.4); /* 이걸로 opacity 설정을 해야 안의 content가 보이게됨*/
+        /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
+    }
+}

@@ -24,6 +24,9 @@ button:hover{
         float:right;
         top:5;
     }
+    #main_body{
+        margin-bottom:12%;
+    }
     #main_write{/*각 글의 전체 틀*/
         border:solid 2px white;
         margin-left:3%;
@@ -50,7 +53,8 @@ button:hover{
         width:25%;
     }
     #main_bottom{/*홈으로,마이페이지로 포함된 하단 부분*/
-        position:sticky;/*하단 고정 위한 설정*/
+        position:fixed;/*하단 고정 위한 설정*/
+        width:100%;
         bottom:0;/*하단 고정 위한 설정*/
         border-top:solid 1.5px black;
         background-color:yellow;
@@ -225,6 +229,9 @@ button:hover{
         margin-right:3%;
         margin-top:2%;
     }
+    #main_body{
+        margin-bottom:12%;
+    }
     #write_top{/*글의 글쓴이+분야*/
         font-size:5vw;
         display:flex;
@@ -246,8 +253,9 @@ button:hover{
         width:25%;
     }
     #main_bottom{/*홈으로,마이페이지로 포함된 하단 부분*/
-        position:sticky;/*하단 고정 위한 설정*/
+        position:fixed;/*하단 고정 위한 설정*/
         bottom:0;/*하단 고정 위한 설정*/
+        width:100%;
         border-top:solid 1.5px black;
         background-color:yellow;
     }
@@ -474,6 +482,9 @@ button:hover{
         margin-right:3%;
         margin-top:2%;
     }
+    #main_body{
+        margin-bottom:12%;
+    }
     #write_top{/*글의 글쓴이+분야*/
         font-size:5vw;
         display:flex;
@@ -495,8 +506,9 @@ button:hover{
         width:25%;
     }
     #main_bottom{/*홈으로,마이페이지로 포함된 하단 부분*/
-        position:sticky;/*하단 고정 위한 설정*/
+        position:fixed;/*하단 고정 위한 설정*/
         bottom:0;/*하단 고정 위한 설정*/
+        width:100%;
         border-top:solid 1.5px black;
         background-color:yellow;
     }
@@ -723,6 +735,9 @@ button:hover{
         margin-right:3%;
         margin-top:2%;
     }
+    #main_body{
+        margin-bottom:12%;
+    }
     #write_top{/*글의 글쓴이+분야*/
         font-size:5vw;
         display:flex;
@@ -744,8 +759,9 @@ button:hover{
         width:25%;
     }
     #main_bottom{/*홈으로,마이페이지로 포함된 하단 부분*/
-        position:sticky;/*하단 고정 위한 설정*/
+        position:fixed;/*하단 고정 위한 설정*/
         bottom:0;/*하단 고정 위한 설정*/
+        width:100%;
         border-top:solid 1.5px black;
         background-color:yellow;
     }
@@ -970,6 +986,9 @@ button:hover{
         margin-right:8%;
         margin-top:2%;
     }
+    #main_body{
+        margin-bottom:12%;
+    }
     #write_top{/*글의 글쓴이+분야*/
         font-size:4vw;
         display:flex;
@@ -991,8 +1010,9 @@ button:hover{
         width:25%;
     }
     #main_bottom{/*홈으로,마이페이지로 포함된 하단 부분*/
-        position:sticky;/*하단 고정 위한 설정*/
+        position:fixed;/*하단 고정 위한 설정*/
         bottom:0;/*하단 고정 위한 설정*/
+        width:100%;
         border-top:solid 1.5px black;
         background-color:yellow;
     }
@@ -1223,6 +1243,9 @@ button:hover{
         margin-right:10%;
         margin-top:2%;
     }
+    #main_body{
+        margin-bottom:12%;
+    }
     #write_top{/*글의 글쓴이+분야*/
         font-size:3vw;
         display:flex;
@@ -1244,8 +1267,9 @@ button:hover{
         width:25%;
     }
     #main_bottom{/*홈으로,마이페이지로 포함된 하단 부분*/
-        position:sticky;/*하단 고정 위한 설정*/
+        position:fixed;/*하단 고정 위한 설정*/
         bottom:0;/*하단 고정 위한 설정*/
+        width:100%;
         border-top:solid 1.5px black;
         background-color:yellow;
     }
@@ -1476,6 +1500,9 @@ button:hover{
         margin-right:20%;
         margin-top:2%;
     }
+    #main_body{
+        margin-bottom:12%;
+    }
     #write_top{/*글의 글쓴이+분야*/
         font-size:1.7vw;
         display:flex;
@@ -1497,8 +1524,9 @@ button:hover{
         width:25%;
     }
     #main_bottom{/*홈으로,마이페이지로 포함된 하단 부분*/
-        position:sticky;/*하단 고정 위한 설정*/
+        position:fixed;/*하단 고정 위한 설정*/
         bottom:0;/*하단 고정 위한 설정*/
+        width:100%;
         border-top:solid 1.5px black;
         background-color:yellow;
     }

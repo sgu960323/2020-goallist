@@ -1,7 +1,13 @@
 {% load static %}
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/mypage.css' %}">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <div id="mypage_top" name="top">
+        <span>My list</span>
+        <button onclick=location.href="{% url 'logout' %}">로그아웃</button>
+        <button onclick="mymodal()">글쓰기</button>
+    </div>
 </head>
 <body>
     <script>
@@ -14,23 +20,49 @@
         var day;
         var reason;
     </script>
-    <div name="top">
-        <span>내가 달성한 목표</span>
-        <button onclick="mymodal()">글쓰기</button>
-        <button onclick=location.href="{% url 'logout' %}">로그아웃</button><br>
-        -------------------------------------------<br>
+    <div id="mypage_total">
+        <div id="total_title">내가 달성한 목표</div>
+        {% for post in posts %}
+            <div id="mypage_title" class="postdetail" name="{{post.id}}">
+                <div id="title">제목: {{ post.title }}&nbsp;</div> 
+                <button class="postbutton" name="{{post.id}}" onclick="detailmodal();">자세히</button>
+            </div>
+        {% endfor %}
     </div>
-    {% for post in posts %}
-        <div class="postdetail" name="{{post.id}}">
-            제목: {{ post.title }} <button class="postbutton" name="{{post.id}}" onclick="detailmodal();">자세히</button><br>
-            -------------------------------------<br>
+    <div id="mypage_half">
+        <div id="success">
+            <div id="success_title">진행중인 목표</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
         </div>
-    {% endfor %}
-    <div name="bottom">
-        <button onclick=location.href="{% url 'main' %}">홈으로</button>
-        <button onclick=location.href="{% url 'mypage' %}">마이페이지로</button>
+        <div id="fail">
+            <div id="fail_title">실패한 목표</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+            <div>test</div>
+        </div>
     </div>
-
     <!-- The Modal-->
     <div id="myModal" class="modal">
         <!-- modal_content-->
@@ -86,6 +118,10 @@
             <input type="button" id="editclose" value="취소하기"></button>
             </form>
         </div>
+    </div>
+    <div id="mypage_bottom" name="bottom">
+        <button onclick=location.href="{% url 'main' %}">홈으로</button>
+        <button onclick=location.href="{% url 'mypage' %}">마이페이지로</button>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!--jquery ajax 사용하려면 위와 같이 해야함 jquery 알아보기-->
