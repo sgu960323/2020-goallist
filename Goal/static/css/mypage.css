@@ -89,6 +89,25 @@ body{
         border:solid 2px grey;
         border-radius:10px;
     }
+    .newmodal-content{/*modal 안의 내용*/
+        margin-top:25%;
+        margin-left:7%;
+        margin-right:7%;
+        background-color:white;
+        height:120vw;
+        border:solid 2px grey;
+        border-radius:10px;
+    }
+    .deletemodal-content{/*modal 안의 내용*/
+        margin-top:50%;
+        margin-left:20%;
+        margin-right:20%;
+        background-color:rgb(0, 255, 255);
+        height:30vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        text-align:center;
+    }
     #nickname{
         margin-top:10%;
         border-bottom:solid 1.5px grey;
@@ -116,6 +135,58 @@ body{
         background-color:rgb(71, 69, 69);
         color:skyblue;
         padding:5px;
+    }
+    #edit_nickname{
+        margin-left:3.7%;
+        margin-top:5%;
+        font-size:6vw;
+        border-bottom:1px solid gray;
+    }
+    #edit_title{
+        margin-left:3.7%;
+    }
+    #edit_title textarea{
+        height:6vw;
+        width:57vw;
+        font-size:5vw;
+    }
+    #edit_body{
+        margin-left:3.7%;
+    }
+    #edit_body textarea{
+        width:95%; 
+        height:20%;
+        font-size:5vw;
+    }
+    #edit_date{
+        display:flex;
+        justify-content:flex-start;
+        margin-left:3.7%;
+    }
+    #edit_year textarea{
+        width:13vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_month textarea{
+        width:10vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_day textarea{
+        width:10vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_reason{
+        margin-left:3.7%;
+    }
+    #edit_reason textarea{
+        width:95%; 
+        height:13%;
+    }
+    #edit_button{
+        text-align:center;
     }
 }
 /*Mobile Device-가로 버전*/
@@ -201,6 +272,28 @@ body{
         /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
         overflow:auto;
     }
+    .newmodal-content{/*modal 안의 내용*/
+        margin-top:2%;
+        margin-left:7%;
+        margin-right:7%;
+        background-color:white;
+        height:90vw;
+        border:solid 2px grey;
+        border-radius:10px;
+    }
+    .deletemodal-content{/*modal 안의 내용*/
+        margin-top:10%;
+        margin-left:20%;
+        margin-right:20%;
+        background-color:rgb(0, 255, 255);
+        height:30vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        text-align:center;
+    }
+    .deletemodal-content button{
+        font-size:4vw;
+    }
     .modal-content{/*modal 안의 내용*/
         margin-top:2%;
         margin-left:7%;
@@ -244,6 +337,69 @@ body{
         background-color:rgb(71, 69, 69);
         color:skyblue;
         padding:7px;
+        font-size:4vw;
+    }
+    #edit_nickname{
+        margin-left:3.7%;
+        margin-top:5%;
+        font-size:5vw;
+        border-bottom:1px solid gray;
+    }
+    #edit_title{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_title textarea{
+        height:5vw;
+        width:57vw;
+        font-size:4vw;
+    }
+    #edit_body{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_body textarea{
+        width:95%; 
+        height:20%;
+        font-size:4vw;
+    }
+    #edit_date{
+        display:flex;
+        justify-content:flex-start;
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_year textarea{
+        width:13vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_month textarea{
+        width:8vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_day textarea{
+        width:8vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_reason{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_reason textarea{
+        width:95%; 
+        height:13%;
+        font-size:4vw;
+    }
+    #edit_button{
+        text-align:center;
+    }
+    #edit_button button{
+        font-size:4vw;
+    }
+    #edit_button input{
         font-size:4vw;
     }
 }
@@ -329,6 +485,30 @@ body{
         /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
         overflow:auto;
     }
+    .newmodal-content{/*modal 안의 내용*/
+        margin-top:2%;
+        margin-left:7%;
+        margin-right:7%;
+        background-color:white;
+        height:90vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        
+    }
+    .deletemodal-content{/*modal 안의 내용*/
+        margin-top:10%;
+        margin-left:20%;
+        margin-right:20%;
+        background-color:rgb(0, 255, 255);
+        height:30vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        text-align:center;
+    }
+    .deletemodal-content button{
+        margin-top:10%;
+        font-size:4vw;
+    }
     .modal-content{/*modal 안의 내용*/
         margin-top:2%;
         margin-left:7%;
@@ -372,6 +552,69 @@ body{
         background-color:rgb(71, 69, 69);
         color:skyblue;
         padding:7px;
+        font-size:4vw;
+    }
+    #edit_nickname{
+        margin-left:3.7%;
+        margin-top:5%;
+        font-size:5vw;
+        border-bottom:1px solid gray;
+    }
+    #edit_title{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_title textarea{
+        height:5vw;
+        width:57vw;
+        font-size:4vw;
+    }
+    #edit_body{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_body textarea{
+        width:95%; 
+        height:20%;
+        font-size:4vw;
+    }
+    #edit_date{
+        display:flex;
+        justify-content:flex-start;
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_year textarea{
+        width:13vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_month textarea{
+        width:8vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_day textarea{
+        width:8vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_reason{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_reason textarea{
+        width:95%; 
+        height:13%;
+        font-size:4vw;
+    }
+    #edit_button{
+        text-align:center;
+    }
+    #edit_button button{
+        font-size:4vw;
+    }
+    #edit_button input{
         font-size:4vw;
     }
 }
@@ -455,6 +698,15 @@ body{
         background-color: rgba(0,0,0,0.4); /* 이걸로 opacity 설정을 해야 안의 content가 보이게됨*/
         /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
     }
+    .newmodal-content{/*modal 안의 내용*/
+        margin-top:15%;
+        margin-left:7%;
+        margin-right:7%;
+        background-color:white;
+        height:100vw;
+        border:solid 2px grey;
+        border-radius:10px;
+    }
     .modal-content{/*modal 안의 내용*/
         margin-top:15%;
         margin-left:7%;
@@ -463,6 +715,20 @@ body{
         height:100vw;
         border:solid 2px grey;
         border-radius:10px;
+    }
+    .deletemodal-content{/*modal 안의 내용*/
+        margin-top:40%;
+        margin-left:20%;
+        margin-right:20%;
+        background-color:rgb(0, 255, 255);
+        height:30vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        text-align:center;
+    }
+    .deletemodal-content button{
+        margin-top:10%;
+        font-size:4vw;
     }
     #nickname{
         margin-top:6%;
@@ -495,6 +761,69 @@ body{
         background-color:rgb(71, 69, 69);
         color:skyblue;
         padding:7px;
+        font-size:4vw;
+    }
+    #edit_nickname{
+        margin-left:3.7%;
+        margin-top:5%;
+        font-size:5vw;
+        border-bottom:1px solid gray;
+    }
+    #edit_title{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_title textarea{
+        height:5vw;
+        width:57vw;
+        font-size:4vw;
+    }
+    #edit_body{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_body textarea{
+        width:95%; 
+        height:20%;
+        font-size:4vw;
+    }
+    #edit_date{
+        display:flex;
+        justify-content:flex-start;
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_year textarea{
+        width:13vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_month textarea{
+        width:10vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_day textarea{
+        width:10vw;
+        height:6vw;
+        font-size:4vw;
+    }
+    #edit_reason{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #edit_reason textarea{
+        width:95%; 
+        height:13%;
+        font-size:4vw;
+    }
+    #edit_button{
+        text-align:center;
+    }
+    #edit_button button{
+        font-size:4vw;
+    }
+    #edit_button input{
         font-size:4vw;
     }
 }
@@ -577,6 +906,16 @@ body{
         background-color: rgba(0,0,0,0.4); /* 이걸로 opacity 설정을 해야 안의 content가 보이게됨*/
         /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
     }
+    .newmodal-content{/*modal 안의 내용*/
+        margin-top:2%;
+        margin-left:7%;
+        margin-right:7%;
+        background-color:white;
+        height:70vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        
+    }
     .modal-content{/*modal 안의 내용*/
         margin-top:2%;
         margin-left:7%;
@@ -586,6 +925,20 @@ body{
         border:solid 2px grey;
         border-radius:10px;
         
+    }
+    .deletemodal-content{/*modal 안의 내용*/
+        margin-top:10%;
+        margin-left:20%;
+        margin-right:20%;
+        background-color:rgb(0, 255, 255);
+        height:30vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        text-align:center;
+    }
+    .deletemodal-content button{
+        margin-top:10%;
+        font-size:4vw;
     }
     #nickname{
         margin-top:4%;
@@ -620,6 +973,69 @@ body{
         background-color:rgb(71, 69, 69);
         color:skyblue;
         padding:7px;
+        font-size:3vw;
+    }
+    #edit_nickname{
+        margin-left:3.7%;
+        margin-top:5%;
+        font-size:4vw;
+        border-bottom:1px solid gray;
+    }
+    #edit_title{
+        margin-left:3.7%;
+        font-size:3vw;
+    }
+    #edit_title textarea{
+        height:3.5vw;
+        width:57vw;
+        font-size:3vw;
+    }
+    #edit_body{
+        margin-left:3.7%;
+        font-size:3vw;
+    }
+    #edit_body textarea{
+        width:95%; 
+        height:20%;
+        font-size:3vw;
+    }
+    #edit_date{
+        display:flex;
+        justify-content:flex-start;
+        margin-left:3.7%;
+        font-size:3vw;
+    }
+    #edit_year textarea{
+        width:13vw;
+        height:3.5vw;
+        font-size:3vw;
+    }
+    #edit_month textarea{
+        width:8vw;
+        height:3.5vw;
+        font-size:3vw;
+    }
+    #edit_day textarea{
+        width:8vw;
+        height:3.5vw;
+        font-size:3vw;
+    }
+    #edit_reason{
+        margin-left:3.7%;
+        font-size:3vw;
+    }
+    #edit_reason textarea{
+        width:95%; 
+        height:13%;
+        font-size:3vw;
+    }
+    #edit_button{
+        text-align:center;
+    }
+    #edit_button button{
+        font-size:3vw;
+    }
+    #edit_button input{
         font-size:3vw;
     }
 }
@@ -703,6 +1119,16 @@ body{
         /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
         overflow:auto;
     }
+    .newmodal-content{/*modal 안의 내용*/
+        margin-top:3%;
+        margin-left:15%;
+        margin-right:15%;
+        background-color:white;
+        height:50vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        
+    }
     .modal-content{/*modal 안의 내용*/
         margin-top:5%;
         margin-left:15%;
@@ -712,6 +1138,20 @@ body{
         border:solid 2px grey;
         border-radius:10px;
         
+    }
+    .deletemodal-content{/*modal 안의 내용*/
+        margin-top:10%;
+        margin-left:20%;
+        margin-right:20%;
+        background-color:rgb(0, 255, 255);
+        height:30vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        text-align:center;
+    }
+    .deletemodal-content button{
+        margin-top:10%;
+        font-size:3vw;
     }
     #nickname{
         margin-top:6%;
@@ -746,6 +1186,69 @@ body{
         background-color:rgb(71, 69, 69);
         color:skyblue;
         padding:7px;
+        font-size:2vw;
+    }
+    #edit_nickname{
+        margin-left:3.7%;
+        margin-top:3%;
+        font-size:3.5vw;
+        border-bottom:1px solid gray;
+    }
+    #edit_title{
+        margin-left:3.7%;
+        font-size:2.5vw;
+    }
+    #edit_title textarea{
+        height:2.5vw;
+        width:57vw;
+        font-size:2vw;
+    }
+    #edit_body{
+        margin-left:3.7%;
+        font-size:2.5vw;
+    }
+    #edit_body textarea{
+        width:95%; 
+        height:20%;
+        font-size:2vw;
+    }
+    #edit_date{
+        display:flex;
+        justify-content:flex-start;
+        margin-left:3.7%;
+        font-size:2vw;
+    }
+    #edit_year textarea{
+        width:11vw;
+        height:2.5vw;
+        font-size:2vw;
+    }
+    #edit_month textarea{
+        width:6vw;
+        height:2.5vw;
+        font-size:2vw;
+    }
+    #edit_day textarea{
+        width:6vw;
+        height:2.5vw;
+        font-size:2vw;
+    }
+    #edit_reason{
+        margin-left:3.7%;
+        font-size:2vw;
+    }
+    #edit_reason textarea{
+        width:95%; 
+        height:13%;
+        font-size:2vw;
+    }
+    #edit_button{
+        text-align:center;
+    }
+    #edit_button button{
+        font-size:2vw;
+    }
+    #edit_button input{
         font-size:2vw;
     }
 }
@@ -839,6 +1342,30 @@ body{
         border-radius:10px;
         
     }
+    .newmodal-content{/*modal 안의 내용*/
+        margin-top:3%;
+        margin-left:15%;
+        margin-right:15%;
+        background-color:white;
+        height:43vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        
+    }
+    .deletemodal-content{/*modal 안의 내용*/
+        margin-top:10%;
+        margin-left:20%;
+        margin-right:20%;
+        background-color:rgb(0, 255, 255);
+        height:20vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        text-align:center;
+    }
+    .deletemodal-content button{
+        margin-top:10%;
+        font-size:2vw;
+    }
     #nickname{
         margin-top:5%;
         border-bottom:solid 1.5px grey;
@@ -872,6 +1399,69 @@ body{
         background-color:rgb(71, 69, 69);
         color:skyblue;
         padding:7px;
+        font-size:2vw;
+    }
+    #edit_nickname{
+        margin-left:3.7%;
+        margin-top:3%;
+        font-size:3.5vw;
+        border-bottom:1px solid gray;
+    }
+    #edit_title{
+        margin-left:3.7%;
+        font-size:2.5vw;
+    }
+    #edit_title textarea{
+        height:2.5vw;
+        width:57vw;
+        font-size:2vw;
+    }
+    #edit_body{
+        margin-left:3.7%;
+        font-size:2.5vw;
+    }
+    #edit_body textarea{
+        width:95%; 
+        height:20%;
+        font-size:2vw;
+    }
+    #edit_date{
+        display:flex;
+        justify-content:flex-start;
+        margin-left:3.7%;
+        font-size:2vw;
+    }
+    #edit_year textarea{
+        width:11vw;
+        height:2.5vw;
+        font-size:2vw;
+    }
+    #edit_month textarea{
+        width:6vw;
+        height:2.5vw;
+        font-size:2vw;
+    }
+    #edit_day textarea{
+        width:6vw;
+        height:2.5vw;
+        font-size:2vw;
+    }
+    #edit_reason{
+        margin-left:3.7%;
+        font-size:2vw;
+    }
+    #edit_reason textarea{
+        width:95%; 
+        height:13%;
+        font-size:2vw;
+    }
+    #edit_button{
+        text-align:center;
+    }
+    #edit_button button{
+        font-size:2vw;
+    }
+    #edit_button input{
         font-size:2vw;
     }
 }
