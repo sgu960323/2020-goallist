@@ -24,7 +24,7 @@
         <div id="total_title">내가 달성한 목표</div>
         {% for post in posts %}
             <div id="mypage_title" class="postdetail" name="{{post.id}}">
-                <div id="title">제목: {{ post.title }}&nbsp;</div> 
+                <div id="smalltitle">제목: {{ post.title }}&nbsp;</div> 
                 <button class="postbutton" name="{{post.id}}" onclick="detailmodal();">자세히</button>
             </div>
         {% endfor %}
@@ -88,8 +88,10 @@
             <div id="body"></div>
             <div id="date"></div>
             <div id="reason"></div>
+            <div id="mybutton">
             <button onclick="myedit();">수정하기</button>
             <button onclick="mydelete();">삭제하기</button>
+            </div>
         </div>
     </div>
     <!--delete Modal-->
@@ -184,7 +186,6 @@
                     $("#title").append(msg['title']);
                     body=msg['body'];
                     $("#body").text("");
-                    $("#body").append("내용: ");
                     $("#body").append(msg['body']);
                     $("#date").text("");
                     year=msg['year'];

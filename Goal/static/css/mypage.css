@@ -45,7 +45,7 @@ body{
         margin-top:2%;
         display:flex;
     }
-    #title{
+    #smalltitle{
         width:83%;
         text-overflow:ellipsis;/*생략*/
         white-space:nowrap;/*자동 줄바꿈 하지 않음*/
@@ -79,6 +79,43 @@ body{
         width:100%;
         background-color: rgba(0,0,0,0.4); /* 이걸로 opacity 설정을 해야 안의 content가 보이게됨*/
         /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
+    }
+    .modal-content{/*modal 안의 내용*/
+        margin-top:25%;
+        margin-left:7%;
+        margin-right:7%;
+        background-color:white;
+        height:120vw;
+        border:solid 2px grey;
+        border-radius:10px;
+    }
+    #nickname{
+        margin-top:10%;
+        border-bottom:solid 1.5px grey;
+        font-size:5vw;
+    }
+    #title{
+        overflow:auto;
+        height:8%;
+        border-bottom:solid 1.5px grey;
+    }
+    #body{
+        overflow:auto;/*지정한 범위를 넘으면 넘치지 않고 scroll이 생기도록*/
+        height:50%;
+        border-bottom:solid 1.5px grey;
+    }
+    #date{
+        border-bottom:solid 1.5px grey;
+    }
+    #reason{
+        overflow:auto;
+        height:23.5%;
+    }
+    #mybutton button{
+        border:solid 1px skyblue;
+        background-color:rgb(71, 69, 69);
+        color:skyblue;
+        padding:5px;
     }
 }
 /*Mobile Device-가로 버전*/
@@ -127,7 +164,7 @@ body{
         margin-top:2%;
         display:flex;
     }
-    #title{
+    #smalltitle{
         width:90%;
         text-overflow:ellipsis;/*생략*/
         white-space:nowrap;/*자동 줄바꿈 하지 않음*/
@@ -162,6 +199,52 @@ body{
         width:100%;
         background-color: rgba(0,0,0,0.4); /* 이걸로 opacity 설정을 해야 안의 content가 보이게됨*/
         /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
+        overflow:auto;
+    }
+    .modal-content{/*modal 안의 내용*/
+        margin-top:2%;
+        margin-left:7%;
+        margin-right:7%;
+        background-color:white;
+        height:70vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        
+    }
+    #nickname{
+        margin-top:6%;
+        border-bottom:solid 1.5px grey;
+        font-size:5vw;
+        height:8%;
+    }
+    #title{
+        overflow:auto;
+        height:7%;
+        border-bottom:solid 1.5px grey;
+        font-size:4vw;
+    }
+    #body{
+        overflow:auto;/*지정한 범위를 넘으면 넘치지 않고 scroll이 생기도록*/
+        height:43%;
+        border-bottom:solid 1.5px grey;
+        font-size:4vw;
+    }
+    #date{
+        border-bottom:solid 1.5px grey;
+        font-size:4vw;
+        height:7%;
+    }
+    #reason{
+        overflow:auto;
+        height:26%;
+        font-size:4vw;
+    }
+    #mybutton button{
+        border:solid 1px skyblue;
+        background-color:rgb(71, 69, 69);
+        color:skyblue;
+        padding:7px;
+        font-size:4vw;
     }
 }
 /*Mobile Device-Pixel 2 XL, iPhone X 가로버전*/
@@ -209,7 +292,7 @@ body{
         margin-top:2%;
         display:flex;
     }
-    #title{
+    #smalltitle{
         width:90%;
         text-overflow:ellipsis;/*생략*/
         white-space:nowrap;/*자동 줄바꿈 하지 않음*/
@@ -244,6 +327,52 @@ body{
         width:100%;
         background-color: rgba(0,0,0,0.4); /* 이걸로 opacity 설정을 해야 안의 content가 보이게됨*/
         /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
+        overflow:auto;
+    }
+    .modal-content{/*modal 안의 내용*/
+        margin-top:2%;
+        margin-left:7%;
+        margin-right:7%;
+        background-color:white;
+        height:70vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        
+    }
+    #nickname{
+        margin-top:6%;
+        border-bottom:solid 1.5px grey;
+        font-size:5vw;
+        height:8%;
+    }
+    #title{
+        overflow:auto;
+        height:7%;
+        border-bottom:solid 1.5px grey;
+        font-size:4vw;
+    }
+    #body{
+        overflow:auto;/*지정한 범위를 넘으면 넘치지 않고 scroll이 생기도록*/
+        height:43%;
+        border-bottom:solid 1.5px grey;
+        font-size:4vw;
+    }
+    #date{
+        border-bottom:solid 1.5px grey;
+        font-size:4vw;
+        height:7%;
+    }
+    #reason{
+        overflow:auto;
+        height:26%;
+        font-size:4vw;
+    }
+    #mybutton button{
+        border:solid 1px skyblue;
+        background-color:rgb(71, 69, 69);
+        color:skyblue;
+        padding:7px;
+        font-size:4vw;
     }
 }
 /*Tablet Device-iPad, iPad Pro 세로버전*/
@@ -290,7 +419,7 @@ body{
         margin-top:2%;
         display:flex;
     }
-    #title{
+    #smalltitle{
         width:90%;
         text-overflow:ellipsis;/*생략*/
         white-space:nowrap;/*자동 줄바꿈 하지 않음*/
@@ -325,6 +454,48 @@ body{
         width:100%;
         background-color: rgba(0,0,0,0.4); /* 이걸로 opacity 설정을 해야 안의 content가 보이게됨*/
         /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
+    }
+    .modal-content{/*modal 안의 내용*/
+        margin-top:15%;
+        margin-left:7%;
+        margin-right:7%;
+        background-color:white;
+        height:100vw;
+        border:solid 2px grey;
+        border-radius:10px;
+    }
+    #nickname{
+        margin-top:6%;
+        border-bottom:solid 1.5px grey;
+        font-size:5vw;
+    }
+    #title{
+        overflow:auto;
+        height:8%;
+        border-bottom:solid 1.5px grey;
+        font-size:4vw;
+    }
+    #body{
+        overflow:auto;/*지정한 범위를 넘으면 넘치지 않고 scroll이 생기도록*/
+        height:50%;
+        border-bottom:solid 1.5px grey;
+        font-size:4vw;
+    }
+    #date{
+        border-bottom:solid 1.5px grey;
+        font-size:4vw;
+    }
+    #reason{
+        overflow:auto;
+        height:24%;
+        font-size:4vw;
+    }
+    #mybutton button{
+        border:solid 1px skyblue;
+        background-color:rgb(71, 69, 69);
+        color:skyblue;
+        padding:7px;
+        font-size:4vw;
     }
 }
 /*Tablet Device-iPad 가로버전*/
@@ -371,7 +542,7 @@ body{
         margin-top:2%;
         display:flex;
     }
-    #title{
+    #smalltitle{
         width:93%;
         text-overflow:ellipsis;/*생략*/
         white-space:nowrap;/*자동 줄바꿈 하지 않음*/
@@ -406,6 +577,51 @@ body{
         background-color: rgba(0,0,0,0.4); /* 이걸로 opacity 설정을 해야 안의 content가 보이게됨*/
         /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
     }
+    .modal-content{/*modal 안의 내용*/
+        margin-top:2%;
+        margin-left:7%;
+        margin-right:7%;
+        background-color:white;
+        height:60vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        
+    }
+    #nickname{
+        margin-top:4%;
+        border-bottom:solid 1.5px grey;
+        font-size:4vw;
+        height:8%;
+    }
+    #title{
+        overflow:auto;
+        height:7%;
+        border-bottom:solid 1.5px grey;
+        font-size:3vw;
+    }
+    #body{
+        overflow:auto;/*지정한 범위를 넘으면 넘치지 않고 scroll이 생기도록*/
+        height:45%;
+        border-bottom:solid 1.5px grey;
+        font-size:3vw;
+    }
+    #date{
+        border-bottom:solid 1.5px grey;
+        font-size:3vw;
+        height:7%;
+    }
+    #reason{
+        overflow:auto;
+        height:27%;
+        font-size:3vw;
+    }
+    #mybutton button{
+        border:solid 1px skyblue;
+        background-color:rgb(71, 69, 69);
+        color:skyblue;
+        padding:7px;
+        font-size:3vw;
+    }
 }
 /*Desktop and iPad Pro 가로버전*/
 @media screen and (min-width:1025px) and (max-width:1370px){
@@ -427,7 +643,7 @@ body{
         border-top:solid 1.5px black;
         background-color:yellow;
     }
-    #mypage_bottom{
+    #mypage_bottom button{
         font-size:2.5vw;
     }
     #total_title, #success_title, #fail_title{
@@ -451,8 +667,8 @@ body{
         margin-top:2%;
         display:flex;
     }
-    #title{
-        width:95%;
+    #smalltitle{
+        width:93%;
         text-overflow:ellipsis;/*생략*/
         white-space:nowrap;/*자동 줄바꿈 하지 않음*/
         overflow:hidden;
@@ -485,6 +701,52 @@ body{
         width:100%;
         background-color: rgba(0,0,0,0.4); /* 이걸로 opacity 설정을 해야 안의 content가 보이게됨*/
         /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
+        overflow:auto;
+    }
+    .modal-content{/*modal 안의 내용*/
+        margin-top:5%;
+        margin-left:15%;
+        margin-right:15%;
+        background-color:white;
+        height:45vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        
+    }
+    #nickname{
+        margin-top:6%;
+        border-bottom:solid 1.5px grey;
+        font-size:3vw;
+        height:8%;
+    }
+    #title{
+        overflow:auto;
+        height:7%;
+        border-bottom:solid 1.5px grey;
+        font-size:2vw;
+    }
+    #body{
+        overflow:auto;/*지정한 범위를 넘으면 넘치지 않고 scroll이 생기도록*/
+        height:43%;
+        border-bottom:solid 1.5px grey;
+        font-size:2vw;
+    }
+    #date{
+        border-bottom:solid 1.5px grey;
+        font-size:2vw;
+        height:7%;
+    }
+    #reason{
+        overflow:auto;
+        height:26%;
+        font-size:2vw;
+    }
+    #mybutton button{
+        border:solid 1px skyblue;
+        background-color:rgb(71, 69, 69);
+        color:skyblue;
+        padding:7px;
+        font-size:2vw;
     }
 }
 /*Desktop full screen*/
@@ -532,7 +794,7 @@ body{
         vertical-align:center;
         display:flex;
     }
-    #title{
+    #smalltitle{
         width:95%;
         text-overflow:ellipsis;/*생략*/
         white-space:nowrap;/*자동 줄바꿈 하지 않음*/
@@ -567,4 +829,60 @@ body{
         background-color: rgba(0,0,0,0.4); /* 이걸로 opacity 설정을 해야 안의 content가 보이게됨*/
         /*opacity:0.4 이걸 하게 되면 그냥 안의 content까지 opacity가 0.4로 설정되어 content도 안보이게됨*/
     }
+    .modal-content{/*modal 안의 내용*/
+        margin-top:2%;
+        margin-left:15%;
+        margin-right:15%;
+        background-color:white;
+        height:40vw;
+        border:solid 2px grey;
+        border-radius:10px;
+        
+    }
+    #nickname{
+        margin-top:5%;
+        border-bottom:solid 1.5px grey;
+        font-size:2.5vw;
+        height:8%;
+    }
+    #title{
+        overflow:auto;
+        height:7%;
+        border-bottom:solid 1.5px grey;
+        font-size:2vw;
+    }
+    #body{
+        overflow:auto;/*지정한 범위를 넘으면 넘치지 않고 scroll이 생기도록*/
+        height:43%;
+        border-bottom:solid 1.5px grey;
+        font-size:2vw;
+    }
+    #date{
+        border-bottom:solid 1.5px grey;
+        font-size:2vw;
+        height:7%;
+    }
+    #reason{
+        overflow:auto;
+        height:26%;
+        font-size:2vw;
+    }
+    #mybutton button{
+        border:solid 1px skyblue;
+        background-color:rgb(71, 69, 69);
+        color:skyblue;
+        padding:7px;
+        font-size:2vw;
+    }
+}
+.close{
+    color:yellowgreen;
+    float: right;
+    font-size:3.5vw;
+    font-weight:bold;
+}
+
+.close:hover{
+    color:black;
+    cursor:pointer;
 }
