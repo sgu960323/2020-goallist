@@ -136,6 +136,34 @@ body{
         color:skyblue;
         padding:5px;
     }
+    #new_title{
+        margin-left:3.7%;
+        margin-top:5%;
+    }
+    #new_body{
+        margin-left:3.7%;
+    }
+    #new_date{
+        display:flex;
+        justify-content:flex-start;
+        margin-left:3.7%;
+    }
+    #new_year{
+    
+    }
+    #new_month{
+    }
+    #new_day{
+    }
+    #new_reason{
+        margin-left:3.7%;
+    }
+    #new_subject{
+        margin-left:3.7%;
+    }
+    #new_button{
+        text-align:center;
+    }
     #edit_nickname{
         margin-left:3.7%;
         margin-top:5%;
@@ -337,6 +365,61 @@ body{
         background-color:rgb(71, 69, 69);
         color:skyblue;
         padding:7px;
+        font-size:4vw;
+    }
+    #new_title{
+        margin-left:3.7%;
+        margin-top:5%;
+        font-size:4vw;
+    }
+    #new_title input{
+        height:5vw;
+        font-size:3vw;
+    }
+    #new_body{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #new_body textarea{
+        font-size:3vw;
+    }
+    #new_date{
+        display:flex;
+        justify-content:flex-start;
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #new_year input{
+        height:4vw;
+        font-size:3vw;
+    }
+    #new_month select{
+        height:5vw;
+        font-size:3vw;
+    }
+    #new_day select{
+        height:5vw;
+        font-size:3vw;
+    }
+    #new_reason{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #new_reason textarea{
+        font-size:3vw;
+    }
+    #new_subject{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #new_subject input{
+        height:5vw;
+        font-size:3vw;
+    }
+    #new_button{
+        text-align:center;
+    }
+    #new_button button{
         font-size:4vw;
     }
     #edit_nickname{
@@ -554,6 +637,59 @@ body{
         padding:7px;
         font-size:4vw;
     }
+    #new_title{
+        margin-left:3.7%;
+        margin-top:5%;
+        font-size:4vw;
+    }
+    #new_title input{
+        height:4vw;
+        font-size:3.5vw;
+    }
+    #new_body{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #new_body textarea{
+        font-size:3.5vw;
+    }
+    #new_date{
+        display:flex;
+        justify-content:flex-start;
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #new_year input{
+        height:4vw;
+        font-size:3.5vw;
+    
+    }
+    #new_month select{
+        height:4vw;
+        font-size:3vw;
+    }
+    #new_day select{
+        height:4vw;
+        font-size:3vw;
+    }
+    #new_reason{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #new_subject{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #new_subject input{
+        height:4vw;
+        font-size:3.5vw;
+    }
+    #new_button{
+        text-align:center;
+    }
+    #new_button button{
+        font-size:4vw;
+    }
     #edit_nickname{
         margin-left:3.7%;
         margin-top:5%;
@@ -761,6 +897,61 @@ body{
         background-color:rgb(71, 69, 69);
         color:skyblue;
         padding:7px;
+        font-size:4vw;
+    }
+    #new_title{
+        margin-left:3.7%;
+        margin-top:5%;
+        font-size:4vw;
+    }
+    #new_title input{
+        height:5vw;
+        font-size:4.5vw;
+    }
+    #new_body{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #new_body textarea{
+        font-size:4vw;
+    }
+    #new_date{
+        display:flex;
+        justify-content:flex-start;
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #new_year input{
+        height:5vw;
+        font-size:4vw;
+    }
+    #new_month select{
+        height:5vw;
+        font-size:3vw;
+    }
+    #new_day select{
+        height:5vw;
+        font-size:3vw;
+    }
+    #new_reason{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #new_reason textarea{
+        font-size:4vw;
+    }
+    #new_subject{
+        margin-left:3.7%;
+        font-size:4vw;
+    }
+    #new_subject input{
+        height:5vw;
+        font-size:4vw;
+    }
+    #new_button{
+        text-align:center;
+    }
+    #new_button button{
         font-size:4vw;
     }
     #edit_nickname{
@@ -973,6 +1164,62 @@ body{
         background-color:rgb(71, 69, 69);
         color:skyblue;
         padding:7px;
+        font-size:3vw;
+    }
+    #new_title{
+        margin-left:3.7%;
+        margin-top:5%;
+        font-size:3vw;
+    }
+    #new_title input{
+        height:3vw;
+        font-size:2.5vw;
+    }
+    #new_body{
+        margin-left:3.7%;
+        font-size:3vw;
+    }
+    #new_body textarea{
+        font-size:2.5vw;
+    }
+    #new_date{
+        display:flex;
+        justify-content:flex-start;
+        margin-left:3.7%;
+        font-size:3vw;
+    }
+    #new_year input{
+        height:3vw;
+        font-size:2.5vw;
+    
+    }
+    #new_month select{
+        height:3vw;
+        font-size:2.5vw;
+    }
+    #new_day select{
+        height:3vw;
+        font-size:2.5vw;
+    }
+    #new_reason{
+        margin-left:3.7%;
+        font-size:3vw;
+    }
+    #new_reason textarea{
+        font-size:2.5vw;
+    }
+    #new_subject{
+        margin-left:3.7%;
+        font-size:3vw;
+    }
+    #new_subject input{
+        height:3vw;
+        font-size:2.5vw;
+    }
+    #new_button{
+        text-align:center;
+    }
+    #new_button button{
         font-size:3vw;
     }
     #edit_nickname{
@@ -1188,6 +1435,61 @@ body{
         padding:7px;
         font-size:2vw;
     }
+    #new_title{
+        margin-left:3.7%;
+        margin-top:5%;
+        font-size:2vw;
+    }
+    #new_title input{
+        height:2.5vw;
+        font-size:2vw;
+    }
+    #new_body{
+        margin-left:3.7%;
+        font-size:2vw;
+    }
+    #new_body textarea{
+        font-size:2vw;
+    }
+    #new_date{
+        display:flex;
+        justify-content:flex-start;
+        margin-left:3.7%;
+        font-size:2vw;
+    }
+    #new_year input{
+        height:2.5vw;
+        font-size:2vw;
+    }
+    #new_month select{
+        height:2.5vw;
+        font-size:2vw;
+    }
+    #new_day select{
+        height:2.5vw;
+        font-size:2vw;
+    }
+    #new_reason{
+        margin-left:3.7%;
+        font-size:2vw;
+    }
+    #new_reason textarea{
+        font-size:2vw;
+    }
+    #new_subject{
+        margin-left:3.7%;
+        font-size:2vw;
+    }
+    #new_subject input{
+        height:2.5vw;
+        font-size:2vw;
+    }
+    #new_button{
+        text-align:center;
+    }
+    #new_button button{
+        font-size:2vw;;
+    }
     #edit_nickname{
         margin-left:3.7%;
         margin-top:3%;
@@ -1400,6 +1702,61 @@ body{
         color:skyblue;
         padding:7px;
         font-size:2vw;
+    }
+    #new_title{
+        margin-left:3.7%;
+        margin-top:5%;
+        font-size:1.7vw;
+    }
+    #new_title input{
+        height:1.7vw;
+        font-size:1.5vw;
+    }
+    #new_body{
+        margin-left:3.7%;
+        font-size:1.7vw;
+    }
+    #new_body textarea{
+        font-size:1.5vw;
+    }
+    #new_date{
+        display:flex;
+        justify-content:flex-start;
+        margin-left:3.7%;
+        font-size:1.7vw;
+    }
+    #new_year input{
+        height:1.7vw;
+        font-size:1.5vw;
+    }
+    #new_month select {
+        height:1.7vw;
+        font-size:1.5vw;
+    }
+    #new_day select{
+        height:1.7vw;
+        font-size:1.5vw;
+    }
+    #new_reason{
+        margin-left:3.7%;
+        font-size:1.7vw;
+    }
+    #new_reason textarea{
+        font-size:1.7vw;
+    }
+    #new_subject{
+        margin-left:3.7%;
+        font-size:1.7vw;
+    }
+    #new_subject input{
+        height:1.7vw;
+        font-size:1.5vw;
+    }
+    #new_button{
+        text-align:center;
+    }
+    #new_button button{
+        font-size:1.7vw;;
     }
     #edit_nickname{
         margin-left:3.7%;

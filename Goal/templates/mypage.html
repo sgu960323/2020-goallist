@@ -66,15 +66,66 @@
     <!-- The Modal-->
     <div id="myModal" class="modal">
         <!-- modal_content-->
-        <div class="modal-content">
+        <div class="newmodal-content">
         <span id="myclose" class="close">&times;</span>
         <form method="POST" action="{% url 'mypage' %}">{% csrf_token %}
-            제목: <input name="title" type="text" required><br>
-            내용: <textarea name="body" required></textarea><br>
-            목표날짜: <input name="year" type="text" required>년 <input name="month" type="text" required>월 <input name="day" type="text" required>일<br>
-            목표이유: <input name="reason" type="text" required><br>
-            목표분야: <input name="subject" type="text" required><br><br>
-            <button type="submit">목표설정</button>
+            <div id="new_title">제목: <input style="outline: 1px solid blue; width:57vw;" name="title" type="text" required></div><br>
+            <div id="new_body">내용<br> <textarea style="outline: 1px solid blue;resize:none; width:95%; height:25%;" name="body" required></textarea></div>
+            <div id="new_date">
+            목표날짜: &nbsp;<div id="new_year"><input style="outline: 1px solid blue; width:13vw;" name="year" type="text" required>년</div>
+                    <div id="new_month">
+                    <select style="outline: 1px solid blue;" name="month" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>월</div> 
+                    <div id="new_day">
+                    <select style="outline: 1px solid blue;" name="day" type="text" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>일</div><br>
+            </div>
+            <div id="new_reason">목표이유<br> <textarea style="outline: 1px solid blue;resize:none; width:95%; height:13%;" name="reason" required></textarea></div>
+            <div id="new_subject">목표분야 <input style="outline: 1px solid blue; width:95%;" name="subject" type="text" required></div><br><br>
+            <div id="new_button"><button type="submit">목표설정</button></div>
         </form>
         </div>
     </div>
